@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_below="@id/toolBar"
+        android:layout_width="match_parent"
+        android:background="@mipmap/node_bg"
+        android:padding="@dimen/space_2"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/node_text"
+            android:gravity="left"
+            android:hint="@string/input_node"
+            android:textColorHint="@color/colorText_c7"
+            android:background="@null"
+            android:lines="6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <Button
+        android:text="@string/input_node_ok"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_16"
+        android:background="@mipmap/next_btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/space_3"
+        android:id="@+id/save_node_btn" />
+</RelativeLayout>

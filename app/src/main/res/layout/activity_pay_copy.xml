@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTest_f8"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_ask_coin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="19dp"
+        android:paddingLeft="@dimen/space_28"
+        android:paddingRight="@dimen/space_28"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/item_pay_ask_money_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_15" />
+
+
+        <TextView
+            android:id="@+id/tv_ask_coin_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_15"
+            android:layout_weight="1"
+            android:textColor="@color/colorText_56"
+            android:textSize="@dimen/textSize_16" />
+
+        <TextView
+            android:id="@+id/ask_coin_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_15"
+            android:textColor="@drawable/supertutorial_speaker_detail_text_normal"
+            android:textSize="@dimen/textSize_16" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_synchronous_courses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_ask_coin"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_24"
+            android:paddingTop="@dimen/space_24">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_27"
+                app:cardCornerRadius="5dp">
+
+                <ImageView
+                    android:id="@+id/book"
+                    android:layout_width="46dp"
+                    android:layout_height="64dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_no_pic" />
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/ll_center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/space_27"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_toLeftOf="@+id/tv_synchronous_course_price"
+                android:layout_toRightOf="@+id/cardView_img"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_class_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="dffddfdfdfdffdfdfdfdfdfdfdfdfdfffdfdfdfdff"
+                    android:textColor="@color/colorText_56"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+
+                    android:id="@+id/tv_version_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_6"
+                    android:text="fdfdfdfdfdf"
+                    android:textColor="@color/colorText_c7"
+                    android:textSize="@dimen/textSize_13" />
+
+                <LinearLayout
+                    android:id="@+id/ll_limit_coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_16"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_red_normal"
+                        android:paddingLeft="@dimen/space_5"
+                        android:paddingRight="@dimen/space_5"
+                        android:text="限时特惠"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_14" />
+
+                    <TextView
+                        android:id="@+id/tv_limit_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_12"
+                        android:text="08-15~16"
+                        android:textColor="@color/btn_red_normal"
+                        android:textSize="@dimen/textSize_14" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_synchronous_course_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/ll_center"
+                android:layout_marginRight="@dimen/space_28"
+                android:text="fdfdfdfdfdfdf"
+                android:textColor="#ff984c"
+                android:textSize="@dimen/textSize_16" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="@dimen/space_28"
+            android:layout_marginRight="@dimen/space_28" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_time_limit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_16"
+            android:paddingTop="@dimen/space_16"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_27"
+                android:text="学习时限:"
+                android:textColor="@color/colorText_c7"
+                android:textSize="@dimen/textSize_14" />
+
+            <TextView
+                android:id="@+id/tv_time_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_12"
+                android:textColor="@color/colorText_c7"
+                android:textSize="@dimen/textSize_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_12"
+                android:text="(购买之日算起)"
+                android:textColor="@color/colorText_c7"
+                android:textSize="@dimen/textSize_14" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/single_all_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_synchronous_courses"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_28"
+            android:paddingRight="@dimen/space_28"
+            android:paddingTop="@dimen/space_24">
+
+            <TextView
+                android:id="@+id/class_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="fdfdf"
+                android:textColor="@color/colorText_56"
+                android:textSize="@dimen/textSize_16" />
+
+            <TextView
+                android:id="@+id/class_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/supertutorial_speaker_detail_text_normal"
+                android:textSize="@dimen/textSize_16" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/all_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/space_16"
+            android:paddingLeft="@dimen/space_28"
+            android:paddingRight="@dimen/space_28"
+            android:paddingBottom="@dimen/space_22"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_corners5_orange"
+                android:padding="@dimen/space_6"
+                android:text="赠"
+                android:textColor="@color/white" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_all_purchase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_12" />
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view_line_all"
+            style="@style/view_line"
+            android:layout_marginLeft="@dimen/space_28"
+            android:layout_marginRight="@dimen/space_28"
+            android:layout_marginTop="@dimen/space_20" />
+
+        <TextView
+            android:id="@+id/tv_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_16"
+            android:paddingLeft="29dp"
+            android:paddingRight="29dp"
+            android:paddingTop="@dimen/space_16" />
+
+    </LinearLayout>
+
+    <View
+
+        android:id="@+id/line"
+        style="@style/view_line"
+        android:layout_below="@+id/single_all_course" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_marginBottom="@dimen/space_14"
+        android:layout_marginTop="@dimen/space_14"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View style="@style/view_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingLeft="@dimen/space_28"
+            android:paddingRight="@dimen/space_28"
+            android:paddingTop="@dimen/space_15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠券"
+                android:textColor="@color/colorText_88"
+                android:textSize="@dimen/textSize_16" />
+
+            <TextView
+                android:id="@+id/tv_coupon_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="@dimen/space_16"
+                android:text="fsfsffd"
+                android:textColor="@color/colorText_c7"
+                android:textSize="@dimen/textSize_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/mine_r_big" />
+
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_coupon"
+        android:layout_marginTop="@dimen/space_12"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View style="@style/view_line" />
+
+
+        <LinearLayout
+            android:id="@+id/alipay_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/space_18"
+            android:paddingLeft="@dimen/space_27"
+            android:paddingRight="@dimen/space_27"
+            android:paddingTop="@dimen/space_18">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/alipay" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_22"
+                android:layout_weight="1"
+                android:text="@string/alipay"
+                android:textColor="@color/colorText_56"
+                android:textSize="@dimen/textSize_16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_pay" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="@dimen/space_27" />
+
+        <LinearLayout
+            android:id="@+id/wechatpay_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/space_18"
+            android:paddingLeft="@dimen/space_27"
+            android:paddingRight="@dimen/space_27"
+            android:paddingTop="@dimen/space_18">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/wechatpay" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_22"
+                android:layout_weight="1"
+                android:text="@string/wechatpay"
+                android:textColor="@color/colorText_56"
+                android:textSize="@dimen/textSize_16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_pay" />
+        </LinearLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_marginLeft="@dimen/space_27"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/unionpay_ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/space_18"
+            android:paddingLeft="@dimen/space_27"
+            android:paddingRight="@dimen/space_27"
+            android:paddingTop="@dimen/space_18"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/unionpay" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_22"
+                android:layout_weight="1"
+                android:text="@string/unionpay"
+                android:textColor="@color/colorText_56"
+                android:textSize="@dimen/textSize_16" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_pay" />
+        </LinearLayout>
+
+        <View style="@style/view_line" />
+    </LinearLayout>
+
+    <!--<View-->
+    <!---->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1" />-->
+
+    <include
+        layout="@layout/layout_bottom_junior_to_high_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+    <View
+        android:id="@+id/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent50"
+        android:visibility="gone" />
+</RelativeLayout>

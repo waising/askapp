@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tab_name"
+        android:layout_width="@dimen/space_26"
+        android:layout_height="@dimen/space_26"
+        android:layout_marginRight="@dimen/space_3"
+        android:background="@drawable/cir_tab_normal"
+        android:text="1"
+        android:gravity="center"
+        android:textColor="@color/colorText_38"
+        android:textSize="@dimen/textSize_16"/>
+</LinearLayout>

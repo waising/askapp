@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/online_item_bg"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="15.3dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="15.3dp"
+                    android:layout_toLeftOf="@+id/time"
+                    android:layout_toRightOf="@+id/user_img_iv"
+                    android:text="用户名"
+                    android:textColor="@color/colorText_89"
+                    android:textSize="@dimen/textSize_16" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp"
+                    android:text="2016-11-1 9:17:30"
+                    android:textColor="@color/login_line"
+                    android:textSize="13.3sp" />
+
+                <ImageView
+                    android:id="@+id/user_img_iv"
+                    android:layout_width="27.3dp"
+                    android:layout_height="27.3dp"
+                    android:layout_marginRight="@dimen/space_8"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="@color/online_item_line"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_12"
+                android:layout_marginTop="11.7dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/title_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="9dp"
+
+                    android:src="@mipmap/item_onlineqalist_title_top"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标题"
+                    android:textColor="@color/colorText_88"
+                    android:textSize="@dimen/textSize_16" />
+            </LinearLayout>
+            <!--<WebView
+                android:id="@+id/mathView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_12"
+                android:layout_marginTop="12.3dp"
+                android:layout_marginRight="@dimen/space_12"
+                />-->
+            <include
+                layout="@layout/common_mathview_maxheight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_12"
+                android:layout_marginRight="@dimen/space_13" />
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="12.3dp"
+                android:layout_marginLeft="@dimen/space_12"
+                android:layout_marginRight="@dimen/space_12">
+                <io.github.kexanie.library.AskMathView
+                    android:id="@+id/mathView"
+                    android:hardwareAccelerated="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="12.3dp"
+                android:background="@color/online_item_line"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10.7dp">
+
+            <TextView
+                android:id="@+id/version_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorText_88"
+                android:textSize="13.3sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15.3dp"
+                    android:drawableLeft="@mipmap/item_onlineqalist_ask"
+                    android:drawablePadding="8.7dp"
+                    android:text="0"
+                    android:textColor="@color/online_item_ask"
+                    android:textSize="13.3sp" />
+
+                <TextView
+                    android:id="@+id/a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="11dp"
+                    android:drawableLeft="@mipmap/item_onlineqalist_a"
+                    android:drawablePadding="8.7dp"
+                    android:text="0"
+                    android:textColor="@color/online_item_a"
+                    android:textSize="13.3sp" />
+
+                <LinearLayout
+                    android:layout_width="0.3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/online_item_line"
+                    android:orientation="vertical" />
+
+                <TextView
+                    android:id="@+id/answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="9.3dp"
+                    android:paddingRight="13dp"
+                    android:text="@string/online_item_answer"
+                    android:textColor="@color/online_item_a"
+                    android:textSize="13.3sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

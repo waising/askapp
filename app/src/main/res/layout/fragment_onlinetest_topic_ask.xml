@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/space_10">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b"
+        android:overScrollMode="never">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/topic_index_tv"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:layout_marginRight="@dimen/space_5"
+                        android:layout_marginTop="@dimen/space_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <!--<com.asking91.app.ui.widget.MultiStateView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/topic_Mv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:msv_emptyView="@layout/state_empty"
+                        app:msv_loadingView="@layout/state_loading"
+                        app:msv_errorView="@layout/state_error"
+                        app:msv_viewState="loading"
+                        android:background="@color/no_color">-->
+
+                        <com.asking91.app.ui.widget.AskMathView
+                            android:id="@+id/topic_mathview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_10"
+                            android:overScrollMode="never"/>
+                    <!--</com.asking91.app.ui.widget.MultiStateView>-->
+
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/topic_rv"
+                    android:overScrollMode="never"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/space_16"
+                    android:layout_marginRight="@dimen/space_16"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+                <!--<com.asking91.app.ui.widget.MultiStateView
+                    android:id="@+id/multiStateView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:msv_emptyView="@layout/state_empty"
+                    app:msv_loadingView="@layout/state_loading"
+                    app:msv_errorView="@layout/state_error"
+                    app:msv_viewState="loading"
+                    android:paddingLeft="@dimen/space_10"
+                    android:paddingRight="@dimen/space_10"
+                    android:background="@color/no_color">-->
+
+                    <com.asking91.app.ui.widget.AskMathView
+                        android:id="@+id/mathView"
+                        android:background="@color/lightyellow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:layout_marginRight="@dimen/space_8"
+                        android:layout_marginLeft="@dimen/space_8"
+                        android:overScrollMode="never"/>
+                <!--</com.asking91.app.ui.widget.MultiStateView>-->
+            </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

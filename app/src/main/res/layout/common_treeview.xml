@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <include layout="@layout/common_toolbar"/>
+    <com.asking91.app.ui.widget.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_below="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/state_empty"
+        app:msv_loadingView="@layout/state_loading"
+        app:msv_errorView="@layout/state_error"
+        app:msv_viewState="loading"
+        android:layout_above="@+id/btn_ly"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/knowledge_tree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_5">
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.asking91.app.ui.widget.MultiStateView>
+    <LinearLayout
+        android:id="@+id/btn_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingBottom="@dimen/space_3"
+        android:paddingRight="@dimen/space_5">
+
+        <Button
+            android:id="@+id/knowledge_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@mipmap/next_btn_bg"
+            android:textSize="@dimen/textSize_18"
+            android:text="@string/ok"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">@dimen/space_16</dimen>
+    <dimen name="activity_vertical_margin">@dimen/space_16</dimen>
+
+    <dimen name="padding_common">@dimen/space_20</dimen>
+    <dimen name="login_padding">@dimen/padding_common</dimen>
+
+    <dimen name="bottom_textsize">@dimen/space_8</dimen>
+
+    <dimen name="home_viewpager_indicator">@dimen/bottom_textsize</dimen>
+
+    <dimen name="padding_editText">@dimen/space_4</dimen>
+
+    <dimen name="drawable_padding">@dimen/space_12</dimen>
+
+    <dimen name="common_navigator_height">45dp</dimen>
+
+    <dimen name="super_buy_top_stroke_width">1dp</dimen>
+
+    <dimen name="space__40">-40dp</dimen>
+    <dimen name="space__6">-6dp</dimen>
+    <dimen name="space_0.3">0.3dp</dimen>
+    <dimen name="space_0.7">0.7dp</dimen>
+    <dimen name="space_1">1dp</dimen>
+    <dimen name="space_2">2dp</dimen>
+    <dimen name="space_3">2dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_5">5dp</dimen>
+    <dimen name="space_6">6dp</dimen>
+    <dimen name="space_7">7dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_9">9dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="space_11">11dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_13">13dp</dimen>
+    <dimen name="space_14">14dp</dimen>
+    <dimen name="space_15">15dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_17">17dp</dimen>
+    <dimen name="space_18">18dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_21">21dp</dimen>
+    <dimen name="space_22">22dp</dimen>
+    <dimen name="space_23">23dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+    <dimen name="space_25">25dp</dimen>
+    <dimen name="space_26">26dp</dimen>
+    <dimen name="space_27">27dp</dimen>
+    <dimen name="space_28">28dp</dimen>
+    <dimen name="space_30">30dp</dimen>
+    <dimen name="space_32">32dp</dimen>
+    <dimen name="space_34">34dp</dimen>
+    <dimen name="space_35">35dp</dimen>
+    <dimen name="space_36">36dp</dimen>
+    <dimen name="space_40">40dp</dimen>
+    <dimen name="space_43">43dp</dimen>
+    <dimen name="space_45">45dp</dimen>
+    <dimen name="space_48">48dp</dimen>
+    <dimen name="space_50">50dp</dimen>
+    <dimen name="space_55">55dp</dimen>
+    <dimen name="space_60">60dp</dimen>
+    <dimen name="space_62">62dp</dimen>
+    <dimen name="space_64">64dp</dimen>
+    <dimen name="space_66">66dp</dimen>
+    <dimen name="space_68">68dp</dimen>
+    <dimen name="space_70">70dp</dimen>
+    <dimen name="space_72">72dp</dimen>
+    <dimen name="space_76">72dp</dimen>
+    <dimen name="space_80">80dp</dimen>
+    <dimen name="space_85">85dp</dimen>
+
+    <dimen name="space_100">100dp</dimen>
+    <dimen name="space_102">102dp</dimen>
+    <dimen name="space_120">120dp</dimen>
+    <dimen name="space_130">130dp</dimen>
+    <dimen name="space_150">150dp</dimen>
+
+    <dimen name="textSize_10">10sp</dimen>
+    <dimen name="textSize_12">12sp</dimen>
+    <dimen name="textSize_13">13sp</dimen>
+    <dimen name="textSize_14">14sp</dimen>
+    <dimen name="textSize_15">15sp</dimen>
+    <dimen name="textSize_16">16sp</dimen>
+    <dimen name="textSize_17">17sp</dimen>
+    <dimen name="textSize_18">18sp</dimen>
+    <dimen name="textSize_20">20sp</dimen>
+    <dimen name="textSize_25">25sp</dimen>
+    <dimen name="textSize_30">30sp</dimen>
+    <dimen name="textSize_34">34sp</dimen>
+    <dimen name="textSize_50">50sp</dimen>
+    <dimen name="textSize_51">51sp</dimen>
+    <dimen name="textSize_52">52sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

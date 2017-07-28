@@ -1,0 +1,396 @@
+<resources>
+    <string name="app_name">阿思可在线</string>
+
+    <string name="network_error">"当前网络不可用，请检查网络情况"</string>
+
+    <string name="home_menu_main">首页</string>
+    <string name="home_menu_refer">资讯</string>
+    <string name="home_menu_message">消息</string>
+    <string name="home_menu_me">我的</string>
+    <string name="home_menu_ctg">初升高</string>
+    <string name="home_menu_oto">1对1</string>
+    <string name="home_menu_test">练吧</string>
+    <string name="home_menu_syncbook">同步课</string>
+
+
+    <!-- 登录 注册-->
+    <string name="login_remember">记住密码</string>
+    <string name="login_account_hint">@string/register_account_hint</string>
+    <string name="login_pass_hint">请输入密码</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_hint1">请输入手机号</string>
+    <string name="login_hint2">请输入密码</string>
+    <string name="login_gomain">先逛一逛>></string>
+    <string name="login_forget">忘记密码？</string>
+
+    <string name="register_account_hint">请输入手机号</string>
+    <string name="register_pass_hint1">请设置密码</string>
+    <string name="register_pass_hint2">请确认密码</string>
+    <string name="register_invite_code">请输入邀请码（可不填）</string>
+    <string name="register_yzm_hint">请输入验证码</string>
+    <string name="register_protocol">《阿思可服务条款》</string>
+    <string name="register_ok">注册</string>
+    <string name="register_protocol_ok">我同意</string>
+
+    <string name="resetpass_hint1">新密码，6-16位，建议数字字母或符号组合</string>
+    <string name="resetpass_hint2">再次输入新密码</string>
+    <string name="resetpass_ok">确认提交</string>
+
+    <string name="online_item_answer">立刻回答</string>
+    <string name="online_dialog1_tip1">科  目</string>
+    <string name="online_dialog1_tip2">年  级</string>
+    <string name="online_dialog1_t1">数学</string>
+    <string name="online_dialog1_t2">物理</string>
+    <string name="online_dialog1_t3">七年级</string>
+    <string name="online_dialog1_t4">八年级</string>
+    <string name="online_dialog1_t5">九年级</string>
+    <string name="online_dialog1_t6">高一</string>
+    <string name="online_dialog1_t7">高二</string>
+    <string name="online_dialog1_t8">高三</string>
+    <string name="online_dialog1_ok">确  定</string>
+    <string name="onlineqa_detail_go">追问</string>
+    <string name="onlineqa_detail_ok">采纳</string>
+    <string name="onlineqa_detail_reply">我来回答</string>
+    <string name="onlineqa_ask_t1">求解答</string>
+    <string name="onlineqa_ask_t2">O..K!图片都不能满足北鼻的惆怅，那就用文字尽情燃烧小宇宙吧...</string>
+    <string name="onlineqa_ask_t3">悬赏阿思币</string>
+    <string name="onlineqa_ask_t4">选择年级、科目</string>
+
+    <!-- 一对一 -->
+    <string name="menu_oto_t">拍摄不懂的题目\n求助老师来解答</string>
+
+    <string name="oto_ask_t1">所属科目</string>
+    <string name="oto_ask_t2">所属年级</string>
+    <string name="oto_t3">阿思可悬赏（悬赏阿思币加快解题速度哦！）</string>
+    <string name="oto_ask_tip0">一对一答疑收费规则\n\n</string>
+    <string name="oto_ask_tip1">
+        真人解题，实时互动，老师们时刻准备着为你答疑！\n\n
+    </string>
+    <string name="oto_ask_tip2"> 辅导按时间计费（2分钟起算）：\n
+        初中 6阿思可币/分钟\n
+        高中 8阿思可币/分钟\n
+        首单免费（时限：20分钟）\n</string>
+    <string name="oto_ask_tip3">阿思可在线专注于初高中的数理化课程，因为专注，所以更专注。</string>
+    <string name="oto_waiting_tip1">同学，请耐心等候\n\n</string>
+    <string name="oto_waiting_tip2">可能你有以下的一些小毛病，请点击右上角查看详情查看：</string>
+    <string name="oto_waiting_tip3">1）重新拍照提问，也许照片有点模糊；</string>
+    <string name="oto_waiting_tip4">2）重新提交问题，刚刚科目年级好像选错了；</string>
+    <string name="oto_waiting_tip5">如有以上问题请重新拍照提交。</string>
+    <string name="oto_waiting_t1">老师正在审题中\n马上就为你解答</string>
+    <string name="oto_waiting_logo_t1">请确认是否退出</string>
+    <string name="oto_waiting_logo_t2">同学，你好！\n
+    退出后老师将无法接到你的单子，再次发布将重新排队等候老师审题为你解答，建议你多等一会~~老师马上就会为你解答。</string>
+    <string name="oto_end_t4">感谢老师（阿思币）</string>
+    <string name="ok">确定</string>
+
+
+    <string name="main_t1">基础知识包</string>
+    <string name="main_t2">拍照搜题</string>
+    <string name="main_t3">更多精彩</string>
+    <string name="main_t4">超级辅导课</string>
+    <string name="main_t5">一对一答疑</string>
+    <string name="main_t6">知识搜索</string>
+    <string name="main_t7">共享空间</string>
+
+    <string-array name="super_free_menu">
+        <item name="menu1">阿思可博士有话要说</item>
+        <item name="menu2">阿思可博士问答时间</item>
+        <item name="menu3">阿思可博士来讲题</item>
+        <item name="menu4">课堂总结</item>
+    </string-array>
+
+    <string name="go_buy">去购买</string>
+    <string name="ask_czsx">初中数学</string>
+    <string name="ask_czwl">初中物理</string>
+    <string name="ask_gzsx">高中数学</string>
+    <string name="ask_gzwl">高中物理</string>
+
+    <string name="basepacket_choose_course">课程版本</string>
+    <string name="basepacket_choose_class">选择年级</string>
+    <string name="selectsubjects">选择科目</string>
+    <string name="basepacket_choose_knowledge">选择知识点</string>
+    <string name="next_step">下一步</string>
+    <string name="basepacket_plase_choose">请选择</string>
+
+    <string name="knowledge_detail">知识详情</string>
+    <string name="knowledge_detail_type">题目类型</string>
+    <string name="comment">评论/纠错</string>
+    <string name="comment_list">评论/纠错列表</string>
+    <string name="knowledge_detail_type_analysis">查看解析</string>
+    <string name="knowledge_detail_type_example">范例解析</string>
+    <string name="knowledge_detail_type_same">查看详细解析</string>
+
+    <string name="knowledge_detail_plz_comment">请输入评论/纠错</string>
+    <string name="know_detail_answer">详细解题</string>
+    <string name="know_same">同类题库</string>
+
+    <string name="commit">提交</string>
+
+    <!-- 拍照搜题-->
+    <string name="photo_search_notice">1、水平拍照识别更准确哦\n2、一次拍照选一题，少一分空白，多一分准确</string>
+
+
+    <!--更多精彩-->
+    <string name="morewonder_title">更多精彩</string>
+    <string name="wonderfuling">精彩还在继续，敬请期待！</string>
+
+    <string name="onlinetest_title">在线检测</string>
+    <string name="onlinetest_topic">出卷</string>
+    <string name="onlinetest_selected">已选</string>
+    <string name="onlinetest_class_time">课时</string>
+    <string name="onlinetest_level">难易度</string>
+
+    <string name="onlinetest_no_level">不限</string>
+    <string name="onlinetest_basic_level">基础</string>
+    <string name="onlinetest_mid_level">中级</string>
+    <string name="onlinetest_high_level">高级</string>
+
+    <string name="onlinetest_choose_version">选择课程版本</string>
+    <string name="onlinetest_choose_classlevel">选择年级</string>
+    <string name="onlinetest_choose_classtime">选择课时</string>
+
+    <string name="onlinetest_knowledge_max_size_err">选择的章节说不能大于10个</string>
+    <string name="onlinetest_knowledge_max_size_zero">你还没有选择章节</string>
+
+    <string name="onlinetest_ask_card">答题卡</string>
+    <string name="onlinetest_ask_result">成绩报告</string>
+    <string name="ask_node">笔记</string>
+    <string name="add_node">添加笔记</string>
+    <string name="alter_node">修改笔记</string>
+    <string name="onlinttest_ask_card_commit">交卷</string>
+    <string name="onlinttest_ask_result_answer_detail">答案解析</string>
+
+    <string name="input_node">输入笔记</string>
+    <string name="input_node_ok">完成</string>
+
+    <!--咨讯-->
+    <string name="refer_zkzx">中考资讯</string>
+    <string name="refer_rdht">热点话题</string>
+    <string name="refer_gkzx">高考资讯</string>
+    <string name="refer_qwkt">趣味课堂</string>
+    <string name="refer_qwsx">趣味数学</string>
+    <string name="refer_qwwl">趣味物理</string>
+    <string name="refer_qwhx">趣味化学</string>
+    <string name="refer_qwxl">趣味心理</string>
+    <string name="refer_xhwy">学嗨无涯</string>
+    <string name="refer_more">更多>></string>
+
+    <string name="refer_list">资讯列表</string>
+    <string name="refer_detail">资讯详情</string>
+
+    <string name="follow">关注</string>
+
+    <!--咨讯end-->
+
+    <!--系统-->
+    <string name="internet_err">唉呀？服务访问异常了！</string>
+    <string name="internet_reconnet">请检查网络是否正确连接</string>
+    <string name="internet_reconnet2">并重新尝试。</string>
+
+    <string name="none">没有找到你想要的东西</string>
+    <string name="none_msg">你可以去逛逛别的学习内容</string>
+    <string name="none_msg2">或者向老师求助哦！</string>
+    <string name="refresh">刷新</string>
+    <string name="back_home">回到首页</string>
+    <!--end-->
+
+    <!-- 我的 -->
+    <string name="shopping_record">购买记录</string>
+    <string name="test_record">检测记录</string>
+    <string name="stu_record">学习足迹</string>
+    <string name="ask_money_record">阿思币记录</string>
+    <string name="err_note">错题本</string>
+    <string name="recommend_reward">推荐有礼</string>
+    <string name="sign_in">签到有礼</string>
+    <string name="pay">充值</string>
+    <string name="sign">签到</string>
+    <string name="search">知识搜索</string>
+    <string name="mrefer">教育资讯</string>
+    <string name="set">设置</string>
+    <string name="youhui">优惠券</string>
+
+    <string name="set_person_modify">个人信息</string>
+    <string name="personal_center">个人中心</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="my_note">我的笔记</string>
+    <string name="myLessons">我的课程</string>
+    <string name="myRecharge">我的充值</string>
+    <string name="myService">我的服务</string>
+    <string name="myMore">更多</string>
+    <string name="myFeedBack">意见反馈</string>
+    <string name="myOtoRecord">答疑记录</string>
+    <!-- end -->
+
+    <!--设置-->
+    <string name="aq">账户安全</string>
+    <string name="reset_pwd">修改密码</string>
+    <string name="reset_tel">修改手机</string>
+
+    <!--reset password-->
+    <string name="input_old_pwd">输入原始密码</string>
+    <string name="input_new_pwd">输入新密码</string>
+    <string name="input_new_again_pwd">再次输入新密码</string>
+    <string name="reset_pwd_ok">确认提交</string>
+
+    <string name="change_password_success">修改密码成功</string>
+
+    <string name="please_enter_old_pass">请输入原密码</string>
+    <string name="please_enter_new_pass">请输入新密码</string>
+    <string name="please_enter_pass1">请确认密码</string>
+    <string name="please_enter_pass1_err">请输入正确的确认密码</string>
+    <string name="please_old_new_same">旧密码不能和新密码一样</string>
+    <string name="password_no_equal">两次输入密码不一样</string>
+    <string name="vertify_old_pass">请输入6到20位原密码</string>
+    <string name="vertify_new_pass">请输入6到20位新密码</string>
+    <string name="vertify_pass1">请输入6到20位确认密码</string>
+
+    <!-- reset tel -->
+    <string name="input_tel">输入手机号码</string>
+    <string name="input_new_tel">输入新手机号码</string>
+    <string name="input_code">输入验证码</string>
+
+
+    <!-- 错题 -->
+    <string name="select_subject_version">选择教材版本</string>
+    <string name="no_more_data">没有更多数据了哦！</string>
+    <string name="please_enter_keyword">请输入关键字哦！</string>
+    <string name="ocr_identify_failure">OCR识别失败</string>
+    <string name="no_result_search">没有查询到相关内容，换个关键词哦~ </string>
+    <string name="retry_other_key_word">亲，搜不到哦，使用热搜或换个关键词试试吧~ </string>
+    <string name="choose_address">请先选择学校所在地哦~ </string>
+    <string name="choose_school">请先选择学校名称哦~ </string>
+    <string name="choose_grade">请先选择年级哦~ </string>
+    <string name="choose_subject">请先选择科目哦~ </string>
+    <string name="choose_textbook_version">请先选择教材版本哦~ </string>
+    <string name="success_del">删除成功</string>
+    <string name="success_change">成功修改</string>
+
+    <!-- end -->
+
+    <!-- 我的收藏 -->
+    <string name="knowledge">知识点</string>
+    <string name="title">题目</string>
+    <string name="refer">教育资讯</string>
+    <!-- end -->
+
+    <!-- pay-->
+    <string name="pay_ask_money">阿思币充值</string>
+    <string name="pay_true_price">应付价格</string>
+    <string name="pay_now">继续支付</string>
+    <string name="pay_money_type">元</string>
+    <string name="pay_money_num">个币</string>
+
+    <string name="pay_title">支付</string>
+    <string name="alipay">支付宝支付</string>
+    <string name="unionpay">银联支付</string>
+    <string name="wechatpay">微信支付</string>
+
+    <string name="to_be_pay">待支付</string>
+    <string name="be_paid">已支付</string>
+    <string name="order_failed">订单失效</string>
+    <string name="order_del">订单删除</string>
+
+    <string name="pay_class">课程购买</string>
+    <string name="pay_super_class">课程套餐购买</string>
+    <string name="pay_server">服务购买</string>
+    <string name="pay_study_km">学习科目</string>
+    <string name="pay_kcjc">课程教材</string>
+    <string name="pay_study_time">所学时限</string>
+    <string name="pay_study_class">所学年级</string>
+    <string name="pay_twelve_months">12个月</string>
+    <string name="pay_six_months">6个月</string>
+
+    <!-- 个人信息 -->
+    <string name="save">保存</string>
+    <string name="school_info">完善资料</string>
+    <string name="school_info_name">请输入真实姓名</string>
+    <string name="school_info_local">选择学校所在地区</string>
+    <string name="school_info_school">选择学校名称</string>
+    <string name="school_info_notice">完善资料送20个阿思币哦！</string>
+
+
+    <!-- 同步课题-->
+    <string name="super_free_title1">&#32;超级课堂&#32;</string>
+    <string name="super_free_title2">演练大冲关</string>
+    <string name="super_syncbook">同步课堂</string>
+
+    <string name="exam_review_first">一轮复习</string>
+    <string name="exam_review_second">二轮复习</string>
+
+    <string name="app_login">登录</string>
+    <string name="app_ad_show">广告图片</string>
+    <string name="app_register">注册</string>
+    <string name="app_resetpass">重置密码</string>
+    <string name="app_webview_protocol">服务条款</string>
+    <string name="app_super_select">同步课堂-选择页面</string>
+    <string name="app_super_free">同步课堂-免费试用</string>
+    <string name="app_super_select_course">同步课堂-选择课时</string>
+    <string name="app_super_select_buy">同步课堂-已购买</string>
+    <string name="app_super_speaker_detail">同步课堂-来讲题-详情</string>
+    <string name="app_super_speaker_detail_version">同步课堂-来讲题-详情-变式题</string>
+    <string name="app_onlineqa">在线问答</string>
+    <string name="app_onlineqa_detail">在线问答详情</string>
+    <string name="app_onlineqa_ask">我要提问</string>
+    <string name="app_onlineqa_myqa">我的问答</string>
+    <string name="app_onlineqa_myqa_ask">我的提问</string>
+    <string name="app_onlineqa_anwser">回答、提问</string>
+    <string name="app_oto_ask">提交问题</string>
+    <string name="app_oto_waiting">等待接单</string>
+    <string name="app_oto_detail">查看详情</string>
+    <string name="app_oto_end">答疑结束</string>
+
+    <!-- 关于 -->
+    <string name="app_about">关于</string>
+    <string name="app_about_company">福建阿思可网络教育有限公司版权所有</string>
+    <string name="app_about_company_beian">闽ICP备15000254号</string>
+    <string name="app_about_company_beian_english">Copyright © 2017 Asking, Inc. All Rights Reserved.</string>
+
+
+    <string name="app_webview">网页</string>
+    <string name="app_photo_show">图片浏览</string>
+
+
+    <!--dialog-->
+    <string name="dialog_exit_login">确定退出登录？</string>
+    <string name="dialog_exit_negative_text">容我想想</string>
+    <string name="dialog_exit_positive_text">狠心退出</string>
+    <string name="dialog_sure_del_note">确定删除</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_content">是否确认删除，删除后无法恢复</string>
+
+
+    <string name="toast_permission_fail">拒绝将导致某些功能不能正常使用</string>
+    <string name="title_activity_aq">AqActivity</string>
+    <!--通联云通讯-->
+
+    <!--*****************网易云********************-->
+    <!--RTS白板-->
+    <!--*****************网易云End********************-->
+
+    <string name="mathematics_for_science">理科数学</string>
+    <string name="liberal_arts_mathematics">文科数学</string>
+    <string name="synchronous_course_purchase">同步课程购买</string>
+    <string name="synchronous_course">同步课程</string>
+    <string name="pay_now_two">立即支付</string>
+
+
+    <string name="cancel">取消</string>
+    <string name="junior_to_high">初升高</string>
+    <string name="money_format">%1$s元</string>
+    <string name="coin_format">%1$s个币</string>
+    <string name="price_format">¥%1$s</string>
+    <string name="free_time">免费试看%1$s分钟</string>
+    <string name="purchase_format">满%1$s元可用</string>
+    <string name="closing_date_format">有效期至 %1$s</string>
+    <string name="active_time_format">(%1$s天后到期)</string>
+    <string name="coupon_content_format">%1$s元现金券</string>
+    <string name="purchased_num">%1$s人购买</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="twelve_month">12个月</string>
+    <string name="six_month">6个月</string>
+    <string name="please_wait">请稍候</string>
+
+</resources>

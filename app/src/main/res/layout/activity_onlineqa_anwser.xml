@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:overScrollMode="never"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBg_f2"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_toolbar" />
+
+        <com.asking91.app.ui.widget.MultiStateView
+            android:id="@+id/multiStateView"
+            android:layout_below="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout"
+            app:msv_emptyView="@layout/state_empty"
+            app:msv_errorView="@layout/state_error"
+            app:msv_loadingView="@layout/state_loading"
+            app:msv_viewState="loading">
+
+           <!-- <com.asking91.app.ui.widget.AskSwipeRefreshLayout
+                android:id="@+id/swipe_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none" />
+
+            <!--</com.asking91.app.ui.widget.AskSwipeRefreshLayout>-->
+
+        </com.asking91.app.ui.widget.MultiStateView>
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/text_white"
+            android:paddingLeft="@dimen/space_3"
+            android:paddingRight="13.3dp">
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="@dimen/space_50"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/onlineqa_anwser_photo" />
+
+            <com.asking91.app.ui.widget.AskEditText
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13.3dp"
+                android:layout_toLeftOf="@+id/ok"
+                android:layout_toRightOf="@+id/photo"
+                android:hint="输入答案..."
+                android:textColorHint="@color/colorText_c7"
+                android:maxLines="3"
+                android:textColor="@color/colorText_56"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:background="@drawable/common_btn_bg"
+                android:text="回答"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/textSize_16" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

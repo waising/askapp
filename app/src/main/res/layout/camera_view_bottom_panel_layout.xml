@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/space_100"
+    android:layout_alignParentBottom="true">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/camera_control_panel_take"
+            android:layout_width="@dimen/space_72"
+            android:layout_height="@dimen/space_72"
+            android:background="@mipmap/camera_search_btn_take_bg"
+            android:padding="@dimen/space_20"
+            android:src="@mipmap/camera_search_btn_take"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_12"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/camera_control_panel_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/space_40"
+        android:background="@mipmap/camera_btn_bg"
+        android:padding="@dimen/space_10"
+        android:src="@mipmap/camera_search_ablum"/>
+
+    <ImageView
+        android:id="@+id/camera_control_panel_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/space_40"
+        android:background="@mipmap/camera_btn_bg"
+        android:padding="@dimen/space_10"
+        android:src="@mipmap/camera_search_cancel"/>
+
+
+</RelativeLayout>

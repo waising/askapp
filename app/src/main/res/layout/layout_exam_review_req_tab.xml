@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_10">
+
+        <LinearLayout
+            android:id="@+id/ll_tab1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_1"
+                        android:layout_weight="1"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_1"
+                        android:layout_weight="1"
+                        android:background="#D9D9D9"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="@dimen/space_45"
+                    android:layout_height="@dimen/space_45"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/radio_req_bg"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/textSize_20"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/space_10"
+                android:text="抓考点|理概念"
+                android:textColor="@drawable/radio_req_color"
+                android:textSize="@dimen/textSize_12"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_1"
+                        android:layout_weight="1"
+                        android:background="#D9D9D9"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_1"
+                        android:layout_weight="1"
+                        android:background="#D9D9D9"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="@dimen/space_45"
+                    android:layout_height="@dimen/space_45"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/radio_req_bg"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/textSize_20"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/space_10"
+                android:text="明策略|升梯度"
+                android:textColor="@drawable/radio_req_color"
+                android:textSize="@dimen/textSize_12"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tab3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_1"
+                        android:layout_weight="1"
+                        android:background="#D9D9D9"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/space_1"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="@dimen/space_45"
+                    android:layout_height="@dimen/space_45"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/radio_req_bg"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/textSize_20"
+                    android:textStyle="bold"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/space_10"
+                android:text="谈思想|启智慧"
+                android:textColor="@drawable/radio_req_color"
+                android:textSize="@dimen/textSize_12"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_line"/>
+</LinearLayout>

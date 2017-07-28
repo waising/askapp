@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_da"
+            android:layout_marginLeft="@dimen/space_16"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rl_avatar"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="65dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="头像"
+                    android:textColor="@color/colorText_88"
+                    android:textSize="@dimen/textSize_16" />
+
+                <ImageView
+                    android:id="@+id/user_img_iv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/nickName_lay"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/space_0.3"
+                android:layout_height="47dp">
+
+                <TextView
+                    android:id="@+id/nickNameTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="昵称"
+                    android:textColor="@color/colorText_88"
+                    android:textSize="@dimen/textSize_16" />
+
+                <EditText
+                    android:id="@+id/nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="@dimen/space_16"
+                    android:layout_toRightOf="@+id/nickNameTip"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:maxLines="1"
+                    android:minHeight="47dp"
+                    android:textColor="@color/colorText_56"
+                    android:textSize="@dimen/textSize_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/name_lay"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/space_0.3"
+                android:background="@color/white"
+                android:layout_height="47dp">
+
+                <TextView
+                    android:id="@+id/nameTip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="姓名"
+                    android:textColor="@color/colorText_88"
+                    android:textSize="@dimen/textSize_16" />
+
+                <!--                    <EditText
+                                        android:id="@+id/name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/space_40"
+                                        android:layout_marginRight="@dimen/space_16"
+                                        android:layout_toRightOf="@+id/nameTip"
+                                        android:gravity="center_vertical|right"
+                                        android:maxLines="1"
+                                        android:background="@null"
+                                        android:minHeight="47dp"
+                                        android:textColor="@color/colorText_56"
+                                        android:textSize="@dimen/textSize_16" />-->
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="@dimen/space_16"
+                    android:layout_toRightOf="@+id/nameTip"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:maxLines="1"
+                    android:minHeight="47dp"
+                    android:textColor="@color/colorText_56"
+                    android:textSize="@dimen/textSize_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sex_lay"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/space_0.3"
+                android:layout_height="47dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="性别"
+                    android:textColor="@color/colorText_88"
+                    android:textSize="@dimen/textSize_16" />
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_16"
+                    android:textColor="@color/colorText_56"
+                    android:textSize="@dimen/textSize_16" />
+
+                <!--          <EditText
+                              android:id="@+id/sex"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:layout_alignParentRight="true"
+                              android:layout_centerVertical="true"
+                              android:layout_marginLeft="@dimen/space_40"
+                              android:layout_marginRight="@dimen/space_16"
+                              android:layout_toRightOf="@+id/tvSex"
+                              android:gravity="center_vertical|right"
+                              android:maxLines="1"
+                              android:background="@null"
+                              android:minHeight="47dp"
+                              android:textColor="@color/colorText_56"
+                              android:textSize="@dimen/textSize_16" />-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/birthday_lay"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/space_0.3"
+                android:layout_height="47dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="出生日期"
+                    android:textColor="@color/colorText_88"
+                    android:textSize="@dimen/textSize_16" />
+
+                <TextView
+                    android:id="@+id/birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_16"
+                    android:textColor="@color/colorText_56"
+                    android:textSize="@dimen/textSize_16" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/address_lay"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/space_0.3"
+                android:layout_height="47dp">
+
+                <TextView
+                    android:id="@+id/t11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="联系地址"
+                    android:textColor="@color/colorText_88"
+                    android:textSize="@dimen/textSize_16" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:background="@null"
+                    android:gravity="center_vertical|end"
+                    android:maxLines="1"
+                    android:minHeight="47dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/colorText_56"
+                    android:textSize="@dimen/textSize_16"
+                    android:layout_toRightOf="@+id/t11"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp" />
+            </RelativeLayout>
+
+            </LinearLayout>
+            <include layout="@layout/layout_line"/>
+            <View xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_16"
+                android:background="@color/main_bg"/>
+            <include layout="@layout/layout_line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_16"
+                    android:background="@color/color_da"
+                    android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/schoolAddressLay"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+
+                    android:layout_height="47dp">
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="学校所在"
+                        android:textColor="@color/colorText_88"
+                        android:textSize="@dimen/textSize_16" />
+
+                    <TextView
+                        android:id="@+id/schoolAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:layout_marginRight="@dimen/space_16"
+                        android:layout_toRightOf="@+id/tvAddress"
+                        android:gravity="end"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textColor="@color/colorText_56"
+                        android:textSize="@dimen/textSize_16" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/schoolNameLay"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/space_0.3"
+                    android:layout_height="47dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="学校名称"
+                        android:textColor="@color/colorText_88"
+                        android:textSize="@dimen/textSize_16" />
+
+                    <TextView
+                        android:id="@+id/schoolName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_16"
+                        android:textColor="@color/colorText_56"
+                        android:textSize="@dimen/textSize_16" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/grade_lay"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/space_0.3"
+                    android:layout_height="47dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="年级"
+                        android:textColor="@color/colorText_88"
+                        android:textSize="@dimen/textSize_16" />
+
+                    <TextView
+                        android:id="@+id/grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/space_16"
+                        android:textColor="@color/colorText_56"
+                        android:textSize="@dimen/textSize_16" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/classGradeLay"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/space_0.3"
+                    android:layout_height="47dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="班级"
+                        android:textColor="@color/colorText_88"
+                        android:textSize="@dimen/textSize_16" />
+
+                    <TextView
+                        android:id="@+id/classGrade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/space_16"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorText_56"
+                        android:textSize="@dimen/textSize_16" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginTop="@dimen/space_0.3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:text="个人简介"
+                        android:textColor="@color/colorText_88"
+                        android:textSize="@dimen/textSize_16" />
+
+                    <EditText
+                        android:id="@+id/introduce"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_10"
+                        android:layout_marginRight="@dimen/space_16"
+                        android:gravity="top"
+                        android:background="@null"
+                        android:hint="请输入个人简介"
+                        android:maxLength="500"
+                        android:maxLines="4"
+                        android:padding="7dp"
+                        android:textColorHint="@color/color_da"
+                        android:textColor="@color/colorText_c7"
+                        android:textSize="@dimen/textSize_14" />
+                </LinearLayout>
+                    </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

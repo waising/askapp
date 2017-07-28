@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_section"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_13"
+            android:paddingRight="@dimen/space_12"
+            android:textColor="@color/colorText_88"
+            android:textSize="@dimen/textSize_16"/>
+
+        <com.asking91.app.ui.widget.AskMathView
+            android:id="@+id/mv_name"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/space_13"
+            android:layout_marginRight="@dimen/space_12"
+            android:layout_marginTop="@dimen/space_12"
+            android:layout_marginBottom="@dimen/space_12"
+           />
+
+
+        <TextView
+            android:id="@+id/tc_content"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:drawableRight="@mipmap/set_item_more"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/space_12"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/colorText_38"
+            android:textSize="@dimen/textSize_14"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_line"/>
+
+
+
+</LinearLayout>

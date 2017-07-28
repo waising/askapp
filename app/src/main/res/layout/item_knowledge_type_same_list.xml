@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/space_10">
+
+    <FrameLayout
+        android:background="@color/white"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.asking91.app.ui.widget.TriangleTextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="left|top"
+            android:paddingTop="@dimen/space_4"
+            android:paddingLeft="@dimen/space_4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_12" />
+
+        <com.asking91.app.ui.widget.MultiStateView
+            android:id="@+id/multiStateView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorText_c7"
+            app:msv_emptyView="@layout/state_empty"
+            app:msv_loadingView="@layout/state_loading"
+            app:msv_errorView="@layout/state_error"
+            app:msv_viewState="loading"
+            android:paddingLeft="@dimen/space_2">
+
+            <com.asking91.app.ui.widget.AskMathView
+                android:id="@+id/mathView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.asking91.app.ui.widget.MultiStateView>
+
+        <Button
+            android:layout_gravity="center"
+            android:textSize="@dimen/textSize_13"
+            android:layout_width="wrap_content"
+            android:background="@color/colorAccent"
+            android:layout_height="@dimen/space_25"
+            android:textColor="@color/white"
+            android:text="@string/knowledge_detail_type_same"/>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="300"
+            app:el_expanded="false"
+            app:el_translate_children="false">
+                <io.github.kexanie.library.MathView
+                    android:background="@color/beige"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </net.cachapa.expandablelayout.ExpandableLayout>
+    </LinearLayout>
+</LinearLayout>

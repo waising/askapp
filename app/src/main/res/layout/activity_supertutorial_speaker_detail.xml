@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorTest_f8"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <include
+                android:id="@+id/detailMathView"
+                layout="@layout/common_math"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_bg"
+                android:scrollbars="none"/>
+
+            <include layout="@layout/layout_line"/>
+
+            <include
+                layout="@layout/layout_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"/>
+
+            <com.asking91.app.ui.widget.AskRadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@drawable/textcolor_oto_end_cbx"
+                    android:textSize="@dimen/textSize_14"
+                    android:visibility="invisible"/>
+
+                <RadioButton
+                    android:id="@+id/rbtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@drawable/textcolor_oto_end_cbx"
+                    android:textSize="@dimen/textSize_14"
+                    android:visibility="invisible"/>
+
+                <RadioButton
+                    android:id="@+id/rbtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@drawable/textcolor_oto_end_cbx"
+                    android:textSize="@dimen/textSize_14"
+                    android:visibility="invisible"/>
+
+                <RadioButton
+                    android:id="@+id/rbtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@drawable/textcolor_oto_end_cbx"
+                    android:textSize="@dimen/textSize_14"
+                    android:visibility="invisible"/>
+
+                <RadioButton
+                    android:id="@+id/rbtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:textColor="@drawable/textcolor_oto_end_cbx"
+                    android:textSize="@dimen/textSize_14"
+                    android:visibility="invisible"/>
+            </com.asking91.app.ui.widget.AskRadioGroup>
+
+            <include layout="@layout/layout_line"/>
+
+            <include
+                android:id="@+id/moreMathView"
+                layout="@layout/common_math"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/yellow"
+                android:paddingBottom="31dp"
+                android:scrollbars="none"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/common_toolbar"/>
+
+    <include
+        android:id="@+id/math"
+        layout="@layout/layout_top_college_exam"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_class_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f8fa"
+        android:paddingBottom="@dimen/space_16"
+        android:paddingLeft="@dimen/space_24"
+        android:paddingRight="@dimen/space_24"
+        android:paddingTop="@dimen/space_16"
+        android:text="uhdfi"
+        android:textColor="@color/colorText_88"
+        android:textSize="@dimen/textSize_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/line" />
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar"/>
+</LinearLayout>

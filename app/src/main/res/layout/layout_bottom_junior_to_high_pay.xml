@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/space_12"
+    android:paddingTop="@dimen/space_12">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/space_12"
+        android:text="应付价格"
+        android:textColor="@color/colorText_88"
+        android:textSize="@dimen/textSize_14" />
+
+    <TextView
+        android:id="@+id/tv_pay_money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/space_12"
+        android:layout_weight="1"
+        android:textColor="@color/light_red"
+        android:textSize="@dimen/textSize_16" />
+
+    <TextView
+        android:id="@+id/pay_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/space_12"
+        android:background="@drawable/bg_corners5_orange"
+        android:paddingBottom="@dimen/space_8"
+        android:paddingLeft="@dimen/space_15"
+        android:paddingRight="@dimen/space_15"
+        android:paddingTop="@dimen/space_8"
+        android:text="立即购买"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_14" />
+
+</LinearLayout>

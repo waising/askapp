@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/space_2"
+    android:layout_marginLeft="@dimen/space_1"
+    android:layout_marginRight="@dimen/space_1"
+    android:paddingTop="@dimen/space_15"
+    android:paddingLeft="@dimen/space_10"
+    android:paddingRight="@dimen/space_10"
+    android:layout_marginBottom="@dimen/space_2">
+    <TextView
+        android:id="@+id/typeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_16"
+        android:paddingTop="@dimen/space_6"
+        android:textColor="@color/color_f6"/>
+
+    <com.asking91.app.ui.widget.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/state_empty"
+        app:msv_loadingView="@layout/state_loading"
+        app:msv_errorView="@layout/state_error"
+        app:msv_viewState="loading"
+        android:layout_marginTop="@dimen/space_20"
+        android:background="@color/colorPrimary">
+
+        <com.asking91.app.ui.widget.AskMathView
+            android:id="@+id/mathView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.asking91.app.ui.widget.MultiStateView>
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler_type_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/analysis_btn"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:background="@color/colorPrimary"
+        android:textSize="@dimen/textSize_16"
+        android:layout_marginTop="@dimen/space_7"
+        android:textColor="@color/colorAccent"
+        android:text="@string/knowledge_detail_type_analysis"/>
+</LinearLayout>

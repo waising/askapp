@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <View style="@style/view_line" />
+
+    <TextView
+        android:id="@+id/tv_single_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_20"
+        android:text="因式分解"
+        android:textColor="@color/colorText_56"
+        android:textSize="@dimen/textSize_16" />
+
+    <TextView
+        android:id="@+id/tv_single_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_single_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space_30"
+        android:text="04-02"
+        android:textColor="@color/colorText_c7"
+        android:textSize="@dimen/textSize_12" />
+
+
+    <TextView
+        android:id="@+id/tv_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_single_name"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginRight="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_17"
+        android:text="初中数学-人教版"
+        android:textColor="@color/colorText_c7"
+        android:textSize="@dimen/space_12" />
+
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_below="@+id/tv_class"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_18" />
+
+
+    <TextView
+        android:id="@+id/tv_learn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_8"
+        android:text="上次学到了" />
+
+
+    <TextView
+        android:id="@+id/tv_start_learn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_8"
+        android:text="马上去学习" />
+
+
+    <TextView
+        android:id="@+id/tv_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginLeft="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_8"
+        android:text="完成学习"
+        android:textColor="#59cf99"
+        android:textSize="@dimen/textSize_12" />
+
+
+    <TextView
+        android:id="@+id/tv_learn_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginTop="@dimen/space_8"
+        android:layout_toRightOf="@+id/tv_learn"
+        android:text="90%"
+        android:textColor="#70d2ff"
+        android:textSize="@dimen/textSize_12" />
+
+    <TextView
+        android:id="@+id/tv_learn_section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginTop="@dimen/space_8"
+        android:layout_alignBaseline="@+id/tv_learn"
+        android:layout_toRightOf="@+id/tv_learn"
+        android:text="第一章 有理数"
+        android:textColor="#70d2ff"
+        android:textSize="@dimen/textSize_12" />
+
+
+    <TextView
+        android:id="@+id/tv_learn_lecture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_learn_section"
+        android:layout_marginBottom="@dimen/space_8"
+        android:layout_marginLeft="@dimen/space_18"
+
+        android:layout_toRightOf="@+id/tv_learn"
+        android:text="第1讲 正数、负数"
+        android:textColor="#70d2ff"
+        android:textSize="@dimen/textSize_12" />
+
+    <View
+        style="@style/view_line"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

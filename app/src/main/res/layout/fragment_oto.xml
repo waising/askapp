@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/menu_oto_bg"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:paddingTop="@dimen/space_80"
+    tools:context="com.asking91.app.ui.oto.OtoFragment">
+
+    <ImageView
+        android:id="@+id/oto_img"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:background="@drawable/oto_cam_img_bg"/>
+    <TextView
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_gravity="center"
+        android:textSize="@dimen/textSize_16"
+        android:text="@string/menu_oto_t"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/server_version_btn"
+    android:button="@null"
+    android:gravity="center"
+    android:background="@drawable/btn_pay_sub"
+    android:textColor="@drawable/textcolor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />

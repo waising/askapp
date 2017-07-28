@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/expand_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingLeft="@dimen/space_10"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/space_1">
+        <TextView
+            android:id="@+id/type_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_16"
+            android:layout_toLeftOf="@+id/expand_iv"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/colorText_33"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:id="@+id/expand_iv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/attr_right"/>
+    </RelativeLayout>
+
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="300"
+            app:el_expanded="false"
+            app:el_translate_children="false">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/space_1">
+                <com.asking91.app.ui.widget.MultiStateView
+                    android:id="@+id/multiStateView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:msv_emptyView="@layout/state_empty"
+                    app:msv_loadingView="@layout/state_loading"
+                    app:msv_errorView="@layout/state_error"
+                    app:msv_viewState="loading"
+                    android:paddingLeft="@dimen/space_2">
+
+                    <com.asking91.app.ui.widget.AskMathView
+                        android:id="@+id/mathView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </com.asking91.app.ui.widget.MultiStateView>
+
+            </RelativeLayout>
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+</LinearLayout>

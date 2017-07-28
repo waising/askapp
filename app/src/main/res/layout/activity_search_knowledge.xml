@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/magic_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_navigator_height"
+        android:layout_below="@+id/toolBar"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginBottom="@dimen/space_9"
+        android:layout_marginLeft="@dimen/space_11"
+        android:layout_marginRight="@dimen/space_11"
+        android:layout_marginTop="@dimen/space_9"
+        android:background="@drawable/edittext_bg"
+        android:paddingLeft="@dimen/space_12"
+        android:paddingRight="@dimen/space_10">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="找重点、查难点、搜考点"
+            android:inputType="textPersonName"
+            android:maxLength="16"
+            android:textColor="@color/colorText_88"
+            android:textColorHint="@color/colorText_c7"
+            android:textSize="@dimen/textSize_16" />
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="@dimen/space_30"
+            android:paddingRight="@dimen/space_10"
+            app:srcCompat="@mipmap/ic_search_knowledge" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.asking91.app.ui.widget.tagview.TagContainerLayout
+            android:id="@+id/tagcontainerLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:padding="10dp"
+            app:container_background_color="#00000000"
+            app:container_border_color="#00000000"
+            app:container_enable_drag="true"
+            app:horizontal_interval="10dp"
+
+            app:tag_background_color="#00000000"
+            app:tag_border_color="#88888888"
+            app:tag_clickable="true"
+            app:tag_corner_radius="4dp"
+            app:tag_enable_cross="false"
+            app:tag_text_color="#88888888"
+            app:tag_theme="none"
+            app:vertical_interval="10dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/space_9"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/online_item_line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:overScrollMode="never"
+                android:paddingLeft="@dimen/space_12"
+                android:scrollbars="none" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/online_item_line" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

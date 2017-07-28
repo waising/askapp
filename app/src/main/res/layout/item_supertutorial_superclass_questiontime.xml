@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/layout_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"/>
+    <RelativeLayout
+        android:id="@+id/expand_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:minHeight="30dp"
+        android:layout_marginRight="8dp"
+        android:paddingLeft="@dimen/space_5"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/space_1">
+        <com.asking91.app.ui.widget.AskSimpleDraweeView
+            android:id="@+id/voice"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerInside" />
+
+        <include layout="@layout/common_math"
+            android:id="@+id/titleMathView"
+            android:layout_toRightOf="@+id/voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/expand_iv"
+            android:layout_marginRight="16dp"/>
+       <!-- <TextView
+            android:id="@+id/type_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_16"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/expand_iv"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/text_white"
+            android:layout_alignParentLeft="true"/>-->
+
+        <ImageView
+            android:id="@+id/expand_iv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/attr_right"/>
+    </RelativeLayout>
+
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        app:el_duration="300"
+        app:el_expanded="true"
+        app:el_translate_children="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <include layout="@layout/layout_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"/>
+            <com.asking91.app.ui.widget.MultiStateView
+                android:id="@+id/multiStateView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                app:msv_emptyView="@layout/state_empty"
+                app:msv_loadingView="@layout/state_loading"
+                app:msv_errorView="@layout/state_error"
+                app:msv_viewState="content">
+
+                <com.asking91.app.ui.widget.AskMathView
+                    android:id="@+id/mathView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"/>
+
+            </com.asking91.app.ui.widget.MultiStateView>
+        </LinearLayout>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+</LinearLayout>

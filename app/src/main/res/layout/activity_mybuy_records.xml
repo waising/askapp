@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTest_f8"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_9">
+
+    <include layout="@layout/common_toolbar" />
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/magic_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_navigator_height"
+        android:layout_below="@+id/toolBar"
+        android:layout_gravity="center_horizontal" />
+
+    <com.asking91.app.ui.widget.AskSwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/space_9"
+            android:overScrollMode="never" />
+    </com.asking91.app.ui.widget.AskSwipeRefreshLayout>
+
+</LinearLayout>

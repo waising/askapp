@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/space_14"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_14"
+        android:layout_marginLeft="@dimen/space_14"
+        android:text="@string/selectsubjects"
+        android:textColor="@color/colorText_56"
+        android:textSize="@dimen/textSize_18"/>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_0.3"
+        android:background="#d9d9d9"/>
+
+    <com.asking91.app.ui.widget.NoScrollGridView
+        android:id="@+id/course_view"
+        style="@style/NoScrollGrid_style"/>
+</LinearLayout>

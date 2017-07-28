@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/common_toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12"
+            android:layout_marginRight="@dimen/space_12"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <ImageView
+                    android:id="@+id/i1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:src="@mipmap/login_pass"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/i1"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:text="登录密码"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/change_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/theme_blue_theme"
+                    android:background="@null"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="修改"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+
+            <include layout="@layout/layout_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <ImageView
+                    android:id="@+id/i2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:src="@mipmap/login_phone"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/i2"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:text="安全手机:"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/aq_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/theme_blue_theme"
+                    android:layout_toRightOf="@id/t1"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:text="123****4567"
+                    android:textSize="@dimen/textSize_14" />
+                <TextView
+                    android:id="@+id/change_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/theme_blue_theme"
+                    android:background="@null"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="修改"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <include layout="@layout/layout_line" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/space_10"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/space_10">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_toLeftOf="@+id/imageView"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/colorText_88"
+        android:textSize="@dimen/space_16" />
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_title"
+        android:layout_alignStart="@+id/tv_title"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_toLeftOf="@+id/imageView"
+        android:text=""
+        android:textColor="@color/colorText_c7"
+        android:textSize="@dimen/space_14" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_6" />
+
+</RelativeLayout>

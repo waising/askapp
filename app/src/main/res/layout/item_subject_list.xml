@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/space_4"
+    android:layout_marginRight="@dimen/space_4"
+    android:layout_marginTop="@dimen/space_9"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/space_9">
+
+    <com.asking91.app.ui.widget.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/no_color"
+        app:msv_emptyView="@layout/state_empty"
+        app:msv_errorView="@layout/state_error"
+        app:msv_loadingView="@layout/state_loading"
+        app:msv_viewState="loading">
+
+        <LinearLayout
+            android:id="@+id/layout_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/space_16"
+            android:layout_marginTop="@dimen/space_9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorText_88"
+                android:visibility="gone" />
+
+            <!--webview-->
+            <include
+                android:id="@+id/mathView"
+                layout="@layout/common_math"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/layoutBottom"
+                android:layout_below="@+id/toolBar"
+                android:layout_margin="@dimen/space_9" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_6"
+                android:layout_marginTop="@dimen/space_9"
+                android:background="@drawable/line_dash" />
+
+        </LinearLayout>
+
+    </com.asking91.app.ui.widget.MultiStateView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/multiStateView">
+
+        <TextView
+            android:id="@+id/tv_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/space_13"
+            android:layout_marginRight="@dimen/space_11"
+            android:layout_marginTop="@dimen/space_12"
+            android:text="难易度:"
+            android:textColor="@color/theme_blue_theme"
+            android:textSize="@dimen/textSize_14" />
+
+        <!--难度值星星-->
+        <com.asking91.app.ui.widget.StarView
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_difficulty"
+            android:layout_toEndOf="@+id/tv_difficulty"
+            android:layout_toRightOf="@+id/tv_difficulty"
+            app:mClickImageId="@mipmap/oto_grade_yes"
+            app:mClickable="false"
+            app:mDefaultImageId="@mipmap/oto_grade_no"
+            app:mImageHeight="@dimen/textSize_18"
+            app:mImageWidth="@dimen/textSize_18"
+            app:mMargin="@dimen/space_2"
+            app:mStarNum="5" />
+
+        <!--添加收藏图标-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ratingBar"
+            android:layout_alignTop="@+id/ratingBar"
+            android:layout_toLeftOf="@+id/tvAddFavor"
+            android:layout_toStartOf="@+id/tvAddFavor"
+            android:scaleType="center"
+            android:visibility="gone"
+            app:srcCompat="@mipmap/ic_fav_subject_no" />
+
+        <TextView
+            android:id="@+id/tvAddFavor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_difficulty"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_16"
+            android:text="查看详情"
+            android:textColor="@color/theme_blue_theme"
+            android:textSize="@dimen/textSize_14" />
+    </RelativeLayout>
+
+</RelativeLayout>

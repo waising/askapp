@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white">
+
+    <com.asking91.app.ui.widget.camera.views.CommCropView
+        android:id="@+id/camera_image_publish_crop_layer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/camera_image_publish_edit_opt_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/space_100"
+        android:background="@color/trans_black"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/camera_image_publish_edit_opt_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="@dimen/space_72"
+                android:layout_height="@dimen/space_72"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/camera_search_btn_take_bg"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/camera_edit_btn_ok"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/camera_image_publish_edit_opt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_40"
+            android:background="@mipmap/camera_btn_bg"
+            android:padding="@dimen/space_10"
+            android:src="@mipmap/camera_search_cancel"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ll_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一次框选一题，更容易得到答案哦"
+        android:layout_marginLeft="-90dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_16"/>
+
+</RelativeLayout>

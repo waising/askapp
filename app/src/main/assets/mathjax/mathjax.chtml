@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        img{max-width:90%;max-height:160px !important;}
+
+        body {
+            margin: 0;
+            -webkit-touch-callout: none!important;
+            -webkit-user-select: none!important;
+            user-select: none!important;
+            word-wrap:break-word;
+        }
+        .timuinputw {
+            display: inline-block;
+            border-bottom: 1px solid #000;
+            width: 40px;
+            height: 20px;
+            margin-bottom: -3px;
+        }
+       </style>
+
+    <script type="text/x-mathjax-config">
+              MathJax.Hub.Config({
+                                "HTML-CSS": {
+                                    availableFonts: ["TeX"],
+                                    linebreaks: { automatic:true },
+                                    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50),
+                                    webFont: null,
+                                    imageFont:"TeX",
+                                    showMathMenu: false},
+                                  jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML","output/CommonHTML"],
+                                  tex2jax: {
+                                    inlineMath: [ ["$", "$"], ["\\\\(","\\\\)"] ],
+                                    displayMath: [ ["$$","$$"], ["\\[", "\\]"] ],
+                                    processEscapes: false,
+                                    ignoreClass: "tex2jax_ignore|dno"
+                                    },
+    
+                                  messageStyle: "none",
+                                  extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js","CHTML-preview.js"],
+                                  errorSettings: { message: ["parse..."] },
+                                  SVG: {linebreaks: {automatic: true}},
+                    });
+
+    </script>
+
+
+<script type="text/javascript"
+        src="https://cdn.staticfile.org/MathJax/MathJax-2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        {$formula}
+    </body>
+</html>

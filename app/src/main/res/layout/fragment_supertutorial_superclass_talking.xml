@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.asking91.app.ui.widget.MultiStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/multiStateView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/no_color"
+    app:msv_emptyView="@layout/state_empty"
+    app:msv_errorView="@layout/state_error"
+    app:msv_loadingView="@layout/state_loading"
+    app:msv_viewState="content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/top_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/tip1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/super_talking_tip"
+                android:gravity="center_vertical"
+                android:text="阿思可博士有话要说"
+                android:textColor="@color/text_white"
+                android:textSize="14sp" />
+
+            <com.asking91.app.ui.widget.AskSimpleDraweeView
+                android:id="@+id/voice"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside" />
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <include
+                    layout="@layout/common_math"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</com.asking91.app.ui.widget.MultiStateView>

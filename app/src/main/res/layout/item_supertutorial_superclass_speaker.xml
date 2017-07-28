@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/super_talking_tip"
+            android:gravity="center_vertical"
+            android:text="阿思可博士来讲题"
+            android:textColor="@color/text_white"
+            android:textSize="14sp"/>
+
+        <com.asking91.app.ui.widget.AskSimpleDraweeView
+            android:id="@+id/voice"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/super_talking_voice"
+            android:scaleType="centerInside"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <include
+        layout="@layout/layout_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/space_1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:minHeight="42dp"
+        android:paddingBottom="4dp"
+        android:paddingLeft="@dimen/space_4"
+        android:paddingTop="4dp">
+
+        <include
+            android:id="@+id/titleMathView"
+            layout="@layout/common_math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/expand_iv"/>
+
+        <ImageView
+            android:id="@+id/expand_iv"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_superclass_speaker_arrows"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:wenba="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <com.asking91.app.ui.widget.camera.views.CommCameraView
+        android:id="@+id/camera_search_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        wenba:imgScale="2"
+        wenba:orientation="90"/>
+
+    <com.asking91.app.ui.widget.camera.views.CameraFreelyLineView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <com.asking91.app.ui.widget.camera.views.FocusImageView
+        android:id="@+id/focusImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        wenba:focus_fail_id="@mipmap/focus_fail"
+        wenba:focus_focusing_id="@mipmap/focus_idle"
+        wenba:focus_success_id="@mipmap/focus_success"/>
+
+    <LinearLayout
+        android:id="@+id/ll_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/space_20"
+        android:paddingRight="@dimen/space_20"
+        android:paddingTop="@dimen/space_5"
+        android:layout_marginLeft="-60dp"
+        android:paddingBottom="@dimen/space_5"
+        android:gravity="center"
+        android:background="@drawable/common_btn_rectangle"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请横屏拍照"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_16"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="题目文字与参考线平行"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_16"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/black"
+        android:visibility="gone"/>
+
+    <com.asking91.app.ui.widget.camera.views.CameraBottomPanelLayout
+        android:id="@+id/camera_bottom_panel_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/space_100"
+        android:layout_alignParentBottom="true"
+        android:background="@color/trans_black"/>
+
+    <ImageView
+        android:id="@+id/camera_control_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_20"
+        android:background="@mipmap/camera_search_light_off"
+        android:padding="@dimen/space_10"/>
+
+</RelativeLayout>

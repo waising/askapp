@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="22dp"
+    android:paddingTop="14dp"
+    android:paddingRight="22dp"
+    android:paddingBottom="5dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/choose_dialog_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/textSize_16"
+        android:textColor="@color/colorText_88"
+        android:text="@string/onlinetest_choose_version"/>
+    <TextView
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="@color/colorText_c7"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pickerview_topbar_height"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical|right"
+            android:paddingLeft="@dimen/pickerview_topbar_paddingleft"
+            android:paddingRight="@dimen/pickerview_topbar_paddingright"
+            android:text="@string/pickerview_cancel"
+            android:textColor="@drawable/selector_pickerview_btn"
+            android:textSize="@dimen/pickerview_topbar_btn_textsize" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnSubmit"
+            android:layout_toRightOf="@+id/btnCancel"
+            android:textColor="@color/pickerview_topbar_title"
+            android:textSize="@dimen/pickerview_topbar_title_textsize" />
+
+        <Button
+            android:id="@id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/pickerview_topbar_paddingright"
+            android:paddingRight="@dimen/pickerview_topbar_paddingleft"
+            android:text="@string/pickerview_submit"
+            android:textColor="@drawable/selector_pickerview_btn"
+            android:textSize="@dimen/pickerview_topbar_btn_textsize" />
+    </RelativeLayout>
+
+    <com.bigkoo.pickerview.lib.WheelView
+        android:id="@+id/heelView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

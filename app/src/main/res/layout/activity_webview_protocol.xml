@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <com.asking91.app.ui.widget.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/toolBar"
+        app:msv_emptyView="@layout/state_empty"
+        app:msv_errorView="@layout/state_error"
+        app:msv_loadingView="@layout/state_loading"
+        app:msv_viewState="loading">
+    <WebView
+        android:id="@+id/mathView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </com.asking91.app.ui.widget.MultiStateView>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/text_white"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_line"/>
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_4"
+            android:layout_marginLeft="@dimen/space_6"
+            android:layout_marginRight="@dimen/space_6"
+            android:layout_marginTop="@dimen/space_4"
+            android:background="@drawable/btn_register_bg"
+            android:text="@string/register_protocol_ok"
+            android:textColor="@color/text_white"/>
+    </LinearLayout>
+
+</RelativeLayout>

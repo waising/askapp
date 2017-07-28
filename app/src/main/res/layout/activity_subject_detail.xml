@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white">
+
+    <FrameLayout
+        android:id="@+id/fl_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50">
+
+        <include layout="@layout/toolbar_customer"/>
+
+        <include layout="@layout/layout_indicator_toolbar"/>
+    </FrameLayout>
+
+    <!--webview-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutBottom"
+        android:layout_below="@+id/fl_head"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/mathView"
+                layout="@layout/common_math"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_3"
+                android:visibility="gone"
+                />
+
+            <!-- 拍照搜题入口过来的，不管有没有搜到题目，都把用户拍的照片给显示出来 -->
+            <ImageView
+                android:id="@+id/pic_take"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:src="@mipmap/no_pic"
+                android:visibility="gone"/>
+
+            <include layout="@layout/layout_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+                <!--拍照搜题入口过来的，搜不到题目的提示-->
+                <LinearLayout
+                    android:id="@+id/layoutNone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/space_22"
+                        android:visibility="visible"
+                        app:srcCompat="@mipmap/ic_search_no_find"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_15"
+                        android:layout_marginTop="@dimen/space_32"
+                        android:gravity="center_horizontal"
+                        android:text="没有找到相关题目"
+                        android:textColor="@color/colorText_88"
+                        android:textSize="@dimen/textSize_18"/>
+
+                    <TextView
+                        android:id="@+id/tvRetry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="请调整关键词再搜索"
+                        android:textColor="@color/colorText_c7"
+                        android:textSize="@dimen/textSize_16"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- 文字搜题入口过来的 -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:visibility="gone"/>
+
+            <!-- 拍照搜题入口过来的 -->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_5"
+                android:paddingLeft="@dimen/space_10"
+                />
+        </LinearLayout>
+    </ScrollView>
+    <!-- 底部button 按钮 -->
+    <LinearLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_10"
+        android:visibility="visible">
+
+        <!-- 拍照搜题入口过来的，底部button左侧 -->
+        <LinearLayout
+            android:id="@+id/layoutTakeOnce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_weight="1"
+            android:background="@drawable/item_border_line"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_12"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/space_7"
+                app:srcCompat="@mipmap/ic_camera"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="再拍一题"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/textSize_14"/>
+        </LinearLayout>
+
+        <!-- 拍照搜题入口过来的，底部button右侧 -->
+        <LinearLayout
+            android:id="@+id/layoutTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/common_btn_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_12"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/space_7"
+                app:srcCompat="@mipmap/ic_teacher"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请老师答疑"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_14"/>
+        </LinearLayout>
+
+        <!-- 文字搜题入口过来的，底部button右侧 -->
+        <LinearLayout
+            android:id="@+id/layoutFromWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_btn_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_12"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/space_7"
+                app:srcCompat="@mipmap/ic_teacher"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请老师解答答疑"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_14"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

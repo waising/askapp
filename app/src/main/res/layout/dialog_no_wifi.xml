@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_corners_white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_18">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_26"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/space_30"
+        android:paddingRight="@dimen/space_30"
+        android:text="当前是移动网络，观看视频将消耗流量"
+        android:textColor="@color/colorText_56"
+        android:textSize="@dimen/textSize_18" />
+
+
+    <TextView
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/bg_corners_blue"
+        android:gravity="center"
+        android:paddingBottom="@dimen/space_12"
+        android:paddingLeft="@dimen/space_50"
+        android:paddingRight="@dimen/space_50"
+        android:paddingTop="@dimen/space_12"
+        android:text="继续观看"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_14" />
+
+
+    <TextView
+        android:id="@+id/btn_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="@dimen/space_8"
+        android:background="@drawable/bg_corners_gray"
+        android:gravity="center"
+        android:paddingBottom="@dimen/space_12"
+        android:paddingLeft="@dimen/space_50"
+        android:paddingRight="@dimen/space_50"
+        android:paddingTop="@dimen/space_12"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_14" />
+</LinearLayout>
+
+
+

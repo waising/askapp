@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <TextView
+
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingBottom="@dimen/space_14"
+        android:paddingLeft="@dimen/space_6"
+        android:paddingRight="@dimen/space_6"
+        android:paddingTop="@dimen/space_14"
+        android:textColor="@drawable/item_classify_color"
+        android:textSize="@dimen/textSize_16"/>
+
+</LinearLayout>

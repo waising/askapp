@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolBar"
+            android:background="@mipmap/oto_end_top_bg">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="78dp"
+                android:layout_marginTop="45dp"
+                android:text="答疑时间："
+                android:textColor="@color/oto_end_t1"
+                android:textSize="@dimen/textSize_18"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/t1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="78dp"
+                android:layout_toRightOf="@+id/t1"
+                android:gravity="right"
+                android:text="00:00"
+                android:textColor="@color/oto_end_t1"
+                android:textSize="@dimen/textSize_18"/>
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/t1"
+                android:layout_below="@+id/t1"
+                android:layout_marginTop="12dp"
+                android:text="花费阿思币："
+                android:textColor="@color/oto_end_t1"
+                android:textSize="@dimen/textSize_18"/>
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/t2"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="78dp"
+                android:layout_toRightOf="@+id/t2"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="@color/oto_end_money"
+                android:textSize="@dimen/textSize_18"/>
+
+            <include
+                android:id="@+id/line1"
+                layout="@layout/layout_line"
+                android:layout_width="266dp"
+                android:layout_height="1.3dp"
+                android:layout_below="@+id/t2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:background="@color/oto_end_t1"/>
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/t1"
+                android:layout_below="@+id/line1"
+                android:layout_marginTop="12dp"
+                android:text="余额："
+                android:textColor="@color/oto_end_t1"
+                android:textSize="@dimen/textSize_18"/>
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/t3"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="78dp"
+                android:layout_toRightOf="@+id/t3"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/textSize_18"/>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/user_img_iv"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@mipmap/ic_tea_img"/>
+
+                <TextView
+                    android:id="@+id/teacherName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_18"
+                    android:layout_toRightOf="@+id/user_img_iv"
+                    android:lineSpacingExtra="10dp"
+                    android:textColor="@color/colorText_56"
+                    android:textSize="@dimen/textSize_16"/>
+
+                <CheckBox
+                    android:id="@+id/cb_favor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/oto_end_star"
+                    android:button="@null"/>
+            </RelativeLayout>
+
+            <include
+                layout="@layout/layout_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/space_10"
+                        android:paddingTop="@dimen/space_10"
+                        android:text="投诉原因"
+                        android:textColor="@color/colorText_88"
+                        android:textSize="@dimen/textSize_14"/>
+
+                    <TextView
+                        android:id="@+id/tv_stu_cause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:paddingBottom="@dimen/space_10"
+                        android:paddingTop="@dimen/space_10"
+                        android:textColor="@color/colorText_33"
+                        android:textSize="@dimen/textSize_16"/>
+                </LinearLayout>
+
+                <include layout="@layout/layout_line"/>
+
+                <TextView
+                    android:id="@+id/tv_stu_feed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/space_10"
+                    android:paddingTop="@dimen/space_10"
+                    android:textColor="@color/colorText_33"
+                    android:textSize="@dimen/textSize_16"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fb"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_18"
+            android:layout_marginLeft="@dimen/space_18"
+            android:layout_marginTop="@dimen/space_18"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="投诉原因："
+                android:textColor="@color/colorText_88"
+                android:textSize="@dimen/textSize_14"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_cause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/space_18"
+                android:background="@drawable/card_btn_corners"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_10">
+
+                <TextView
+                    android:id="@+id/tv_cause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="请选择"
+                    android:textColor="@color/colorText_88"
+                    android:textColorHint="@color/colorText_c7"
+                    android:textSize="@dimen/textSize_16"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_feedback_down_arrow"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include
+            layout="@layout/layout_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_0.3"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_18"
+            android:layout_marginTop="@dimen/space_10"
+            android:text="具体描述:"
+            android:textColor="@color/colorText_88"
+            android:textSize="@dimen/textSize_14"/>
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_18"
+            android:background="@drawable/card_btn_corners"
+            android:gravity="top"
+            android:hint="请输入评价内容"
+            android:minLines="10"
+            android:padding="@dimen/space_12"
+            android:textColor="@color/colorText_88"
+            android:textColorHint="@color/colorText_c7"
+            android:textSize="@dimen/textSize_14"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:background="@drawable/common_btn_bg"
+        android:gravity="center"
+        android:padding="@dimen/space_10"
+        android:text="@string/commit"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/space_16"></Button>
+
+</LinearLayout>

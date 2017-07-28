@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_50"
+    android:minHeight="@dimen/space_50"
+    app:maxButtonHeight="@dimen/space_50"
+    android:background="?attr/asking91Theme"
+    android:theme="@style/Custom.Theme.ToolBar"
+    android:elevation="@null"
+    app:title="@string/app_name"
+    app:titleTextColor="?attr/asking91ToolbarText"
+    app:titleTextAppearance="@style/toolbar_textAppearance"
+    app:popupTheme="@style/Theme.ToolBar.Base"
+    app:contentInsetStartWithNavigation="0dp"
+    app:navigationIcon="?attr/navBackIcon"
+    android:id="@+id/toolBar"
+    tools:targetApi="lollipop">
+
+    <RelativeLayout
+        android:id="@+id/user_info_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/user_img_iv"
+            android:paddingLeft="@dimen/space_8"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <LinearLayout
+                android:id="@+id/title_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    tools:text="@string/app_name"
+                    android:textSize="@dimen/textSize_14"
+                    android:textColor="?attr/asking91ToolbarText"/>
+
+                <ImageView
+                    android:id="@+id/title_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/title_more"
+                    android:layout_marginLeft="9dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

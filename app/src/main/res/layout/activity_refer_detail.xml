@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <ScrollView
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/refer_title_tv"
+            android:text=""
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/space_18"
+            android:textColor="@color/colorText_4e"
+            android:textSize="@dimen/textSize_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/refer_title_ly"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/space_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="来源:"
+                android:textColor="@color/colorText_c7"
+                android:textSize="@dimen/textSize_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:gravity="end" />
+
+            <TextView
+                android:text=""
+                android:id="@+id/refer_from_tv"
+                android:textColor="@color/colorText_c7"
+                android:textSize="@dimen/textSize_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="10"
+                android:lines="1"
+                android:ellipsize="end"
+                android:paddingLeft="@dimen/space_10"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:text=""
+                android:id="@+id/refer_date_tv"
+                android:textColor="@color/colorText_c7"
+                android:textSize="@dimen/textSize_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_22"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/refer_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_0.7"
+            android:background="@color/color_da"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"/>
+
+        <com.asking91.app.ui.widget.MultiStateView
+            android:id="@+id/multiStateView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:msv_emptyView="@layout/state_empty"
+            app:msv_loadingView="@layout/state_loading"
+            app:msv_errorView="@layout/state_error"
+            app:msv_viewState="loading"
+            android:background="@color/no_color"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_marginLeft="@dimen/space_12"
+            android:layout_marginRight="@dimen/space_12">
+
+            <com.asking91.app.ui.widget.AskMathView
+                android:id="@+id/mathView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.asking91.app.ui.widget.MultiStateView>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

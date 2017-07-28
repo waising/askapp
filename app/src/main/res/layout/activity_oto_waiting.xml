@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/oto_waiting_bg"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <com.asking91.app.ui.widget.AskSimpleDraweeView
+        android:id="@+id/draweeView"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@mipmap/oto_waiting_tip_bg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/oto_waiting_t1"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/textSize_16"/>
+
+    <LinearLayout
+        android:id="@+id/ll_out_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/oto_waiting_tip_bg"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oto_waiting_tip2"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/textSize_14"/>
+
+        <TextView
+            android:id="@+id/tv_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oto_waiting_tip3"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/textSize_14"/>
+
+        <TextView
+            android:id="@+id/tv_qustion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oto_waiting_tip4"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/textSize_14"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oto_waiting_tip5"
+            android:textColor="@color/oto_waiting_t1"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/textSize_14"/>
+
+    </LinearLayout>
+</LinearLayout>

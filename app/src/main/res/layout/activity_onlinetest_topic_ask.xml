@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:layout_gravity="center"
+    tools:context="com.asking91.app.ui.onlinetest.topicask.OnlineTestTopicAskActivity">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ask_viewPager"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolBar"
+        android:layout_above="@+id/b"
+        android:layout_height="wrap_content"/>
+
+    <ViewStub android:layout="@layout/state_empty"
+        android:id="@+id/viewStub"
+        android:inflatedId="@+id/viewStub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:layout_above="@+id/b"/>
+
+    <LinearLayout
+        android:id="@+id/b"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@color/main_bg"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/space_50">
+        <TextView
+            android:id="@+id/index_tv"
+            android:text="1"
+            android:textColor="@color/theme_blue_theme"
+            android:textSize="@dimen/textSize_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/colorText_88"
+            android:textSize="@dimen/textSize_16"
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/total_index_tv"
+            android:text="10"
+            android:textColor="@color/colorText_88"
+            android:textSize="@dimen/textSize_16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

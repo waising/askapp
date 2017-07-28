@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:background="@color/main_bg"
+        android:layout_marginTop="@dimen/space_4">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_15"
+            android:paddingTop="@dimen/space_15">
+            <TextView
+                android:id="@+id/typeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize_16"
+                android:paddingTop="@dimen/space_6"
+                android:background="@color/white"
+                android:textColor="@color/color_f6" />
+
+                <com.asking91.app.ui.widget.AskMathView
+                    android:id="@+id/mathView"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_type_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:background="@color/white"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:background="@color/main_bg"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_marginBottom="@dimen/space_1">
+
+                <RelativeLayout
+                    android:id="@+id/know_expand_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_48"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/space_10"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/type_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_16"
+                        android:textColor="@color/colorText_33"
+                        android:layout_alignParentLeft="true"/>
+
+                    <ImageView
+                        android:id="@+id/know_expand_iv"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/attr_right"/>
+                </RelativeLayout>
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/expandable_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_duration="300"
+                    app:el_expanded="false"
+                    android:layout_marginTop="@dimen/space_1"
+                    android:background="@color/white"
+                    app:el_translate_children="false">
+
+                    <TextView
+                        android:id="@+id/knowledgeNames_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_16"
+                        android:text="sss"
+                        android:paddingTop="@dimen/space_5"
+                        android:paddingLeft="@dimen/space_10"
+                        android:paddingBottom="@dimen/space_5"
+                        android:textColor="@color/colorAccent"/>
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/space_1">
+
+                <RelativeLayout
+                    android:id="@+id/know_detail_answer_expand_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_48"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/space_10"
+                    android:layout_gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/type_detail_answer_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_16"
+                        android:textColor="@color/colorText_33"
+                        android:layout_alignParentLeft="true"/>
+
+                    <ImageView
+                        android:id="@+id/know_detail_answer_expand_iv"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/attr_right"/>
+                </RelativeLayout>
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/detail_answer_expandable_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_duration="300"
+                    app:el_expanded="false"
+                    android:layout_marginTop="@dimen/space_1"
+                    android:background="@color/white"
+                    app:el_translate_children="false">
+
+                    <com.asking91.app.ui.widget.AskMathView
+                        android:id="@+id/detail_answer_mathView"
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_bg">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_type_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <RelativeLayout
+                    android:id="@+id/know_expand_same_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_48"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/space_10"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="@dimen/space_1">
+                    <TextView
+                        android:id="@+id/type_name_same_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSize_16"
+                        android:textColor="@color/colorText_33"
+                        android:layout_alignParentLeft="true"/>
+
+                    <ImageView
+                        android:id="@+id/know_expand_same_iv"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/attr_right"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+                    <net.cachapa.expandablelayout.ExpandableLayout
+                        android:id="@+id/expandable_same_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:el_duration="300"
+                        app:el_expanded="false"
+                        app:el_translate_children="false">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:overScrollMode="never"
+                            android:background="@color/white" />
+
+                    </net.cachapa.expandablelayout.ExpandableLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

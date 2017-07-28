@@ -1,0 +1,11 @@
+include ':app', 'liraries:sharesdklibrary',
+        ':liraries:ptr-lib',
+        ':liraries:treeview',
+        ':liraries:SwipeBackLayout',
+        ':liraries:magicindicator',
+        ':liraries:FlycoDialog',
+        ':liraries:ExpandableLayout',
+        ':liraries:pingpp',
+        ':liraries:pickerview',
+        ':liraries:giraffeplayer',
+        ':liraries:ijkplayer-java'

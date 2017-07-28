@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+    <include layout="@layout/common_toolbar"/>
+    <ScrollView
+        android:overScrollMode="never"
+        android:layout_below="@+id/toolBar"
+        android:layout_above="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/km_ly"
+            android:paddingTop="@dimen/space_16"
+            android:paddingLeft="@dimen/space_14"
+            android:paddingRight="@dimen/space_14"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/pay_study_km"
+            android:textSize="@dimen/textSize_14"
+            android:textColor="@color/colorText_56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/space_16"
+                android:paddingBottom="@dimen/space_16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioGroup
+                    android:id="@+id/pay_km_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                    <RadioButton
+                        android:id="@+id/czsx_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/ask_czsx"
+                        android:tag="@string/ask_czsx"
+                        android:background="@drawable/btn_pay_sub"
+                        android:textColor="@drawable/textcolor"
+                        android:textSize="@dimen/textSize_14"/>
+
+                    <RadioButton
+                        android:id="@+id/czwl_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/ask_czwl"
+                        android:tag="@string/ask_czwl"
+                        android:background="@drawable/btn_pay_sub"
+                        android:textColor="@drawable/textcolor"
+                        android:textSize="@dimen/textSize_14"
+                        android:layout_marginLeft="@dimen/space_8"/>
+
+                    <RadioButton
+                        android:id="@+id/gzsx_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/ask_gzsx"
+                        android:tag="@string/ask_gzsx"
+                        android:background="@drawable/btn_pay_sub"
+                        android:textColor="@drawable/textcolor"
+                        android:textSize="@dimen/textSize_14"
+                        android:layout_marginLeft="@dimen/space_8"/>
+
+                    <RadioButton
+                        android:id="@+id/gzwl_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/ask_gzwl"
+                        android:tag="@string/ask_gzwl"
+                        android:background="@drawable/btn_pay_sub"
+                        android:textColor="@drawable/textcolor"
+                        android:textSize="@dimen/textSize_14"
+                        android:layout_marginLeft="@dimen/space_8"/>
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/line_1"
+            android:layout_below="@+id/km_ly"
+            android:background="@color/color_da"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_0.3" />
+
+        <LinearLayout
+            android:id="@+id/kcjc_ly"
+            android:layout_below="@+id/line_1"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingTop="@dimen/space_16"
+            android:paddingLeft="@dimen/space_14"
+            android:paddingRight="@dimen/space_14"
+            android:paddingBottom="@dimen/space_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/pay_kcjc"
+                android:textColor="@color/colorText_56"
+                android:textSize="@dimen/textSize_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/study_time_ly"
+            android:layout_below="@+id/kcjc_ly"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/space_6"
+            android:paddingLeft="@dimen/space_14"
+            android:paddingRight="@dimen/space_14"
+            android:paddingTop="@dimen/space_16"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/pay_study_time"
+                android:textColor="@color/colorText_56"
+                android:textSize="@dimen/textSize_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:id="@+id/pay_study_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/space_16"
+                android:layout_marginBottom="@dimen/space_16"
+                android:orientation="horizontal"
+                android:background="@color/white">
+
+                <RadioButton
+                    android:id="@+id/time_12_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/pay_twelve_months"
+                    android:background="@drawable/btn_pay_sub"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="@dimen/textSize_14"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_8"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/pay_six_months"
+                    android:background="@drawable/btn_pay_sub"
+                    android:textColor="@drawable/textcolor"
+                    android:textSize="@dimen/textSize_14"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/line_2"
+            android:layout_below="@+id/study_time_ly"
+            android:background="@color/color_da"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_0.3" />
+        <LinearLayout
+            android:id="@+id/class_ly"
+            android:layout_below="@+id/line_2"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/space_14"
+            android:paddingRight="@dimen/space_14"
+            android:paddingTop="@dimen/space_16"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/pay_study_class"
+                android:textColor="@color/colorText_56"
+                android:textSize="@dimen/textSize_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_class"
+                android:layout_marginTop="@dimen/space_10"
+                android:paddingBottom="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <!--<include layout="@layout/layout_bottom_junior_to_high_pay"-->
+        <!--android:id="@+id/bottom_lay"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="match_parent" />-->
+    <include layout="@layout/common_pay"
+        android:id="@+id/bottom_lay"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+</RelativeLayout>

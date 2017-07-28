@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/space_6"
+    android:background="@color/colorTest_f8"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/space_16"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_6"
+            android:text=""
+            android:textColor="@color/colorText_88"
+            android:textSize="@dimen/textSize_14" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_10"
+            android:text=""
+            android:textColor="@color/colorText_c7"
+            android:textSize="@dimen/textSize_14" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/expand_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_1"
+        android:background="@color/white"
+        android:padding="@dimen/space_10"
+        android:visibility="gone">
+
+        <!--webview-->
+        <include
+            android:id="@+id/mathView_title"
+            layout="@layout/common_math"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/space_10" />
+
+        <TextView
+            android:id="@+id/tv_difficult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/mathView_title"
+            android:layout_marginRight="@dimen/space_10"
+            android:text="难易度："
+            android:textColor="@color/colorText_c7"
+            android:textSize="@dimen/textSize_14" />
+
+        <!--难度值星星-->
+        <com.asking91.app.ui.widget.StarView
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mathView_title"
+            android:layout_toEndOf="@+id/tv_difficult"
+            android:layout_toRightOf="@+id/tv_difficult"
+            app:mClickImageId="@mipmap/oto_grade_yes"
+            app:mClickable="false"
+            app:mDefaultImageId="@mipmap/oto_grade_no"
+            app:mImageHeight="@dimen/space_18"
+            app:mImageWidth="@dimen/space_18"
+            app:mMargin="@dimen/space_2"
+            app:mStarNum="5" />
+
+        <TextView
+            android:id="@+id/tv_divider_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ratingBar"
+            android:layout_marginTop="@dimen/space_10"
+            android:background="@color/color_da" />
+
+
+        <RelativeLayout
+            android:id="@+id/layout_see"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_divider_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/checked_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:button="@null"
+                android:checked="false"
+                android:drawablePadding="@dimen/space_10"
+                android:drawableLeft="@drawable/selector_supertutorial_speaker_detail_icon_bg"
+                android:text="查看解析"
+                android:textColor="@drawable/selector_supertutorial_speaker_detail_text_bg"
+                android:textSize="@dimen/textSize_14" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:el_duration="300"
+        app:el_expanded="false"
+        app:el_translate_children="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="@dimen/space_10"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_1"
+            android:background="@color/white">
+
+            <com.asking91.app.ui.widget.MultiStateView
+                android:id="@+id/multiStateView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_2"
+                app:msv_emptyView="@layout/state_empty"
+                app:msv_errorView="@layout/state_error"
+                app:msv_loadingView="@layout/state_loading"
+                app:msv_viewState="loading">
+
+                <!--webview-->
+                <include
+
+                    android:id="@+id/mathView"
+                    layout="@layout/common_math"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.asking91.app.ui.widget.MultiStateView>
+
+        </RelativeLayout>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+</LinearLayout>

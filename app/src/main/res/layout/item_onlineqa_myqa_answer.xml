@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/online_item_bg"
+    android:paddingLeft="@dimen/space_16"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    android:id="@+id/layout">
+    <include
+        layout="@layout/layout_simpledraweeview"
+        android:id="@+id/img"
+        android:layout_width="78dp"
+        android:layout_height="54.7dp"
+        android:src="@mipmap/no_pic"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/img"
+        android:layout_marginTop="13.7dp"
+        android:layout_marginLeft="8.7dp"
+        android:textColor="@color/colorText_88"/>
+    <TextView
+        android:id="@+id/version_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13.3sp"
+        android:layout_marginLeft="7.7dp"
+        android:textColor="@color/colorText_c7"
+        android:layout_toRightOf="@+id/title"
+        android:layout_alignBottom="@+id/title"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13.3sp"
+        android:textColor="@color/colorText_c7"
+        android:layout_alignLeft="@+id/title"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="13.7dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="11dp"
+        android:src="@mipmap/set_item_more"
+        android:layout_alignTop="@+id/version_tv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp"
+        android:id="@+id/imageView" />
+
+</RelativeLayout>

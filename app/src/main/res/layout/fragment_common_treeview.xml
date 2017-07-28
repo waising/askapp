@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <TextView
+        android:id="@+id/tv_chapter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f8fa"
+        android:drawableRight="@mipmap/ic_superclass_up"
+        android:gravity="left|center_vertical"
+        android:paddingBottom="@dimen/space_13"
+        android:paddingLeft="@dimen/space_20"
+        android:paddingRight="@dimen/space_20"
+        android:paddingTop="@dimen/space_13"
+        android:text="@string/select_subject_version"
+        android:textColor="@color/colorText_88"
+        android:textSize="@dimen/textSize_16"/>
+
+    <include layout="@layout/layout_line"/>
+
+    <com.asking91.app.ui.widget.MultiStateView
+        android:id="@+id/load_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/no_color"
+        app:msv_emptyView="@layout/state_empty"
+        app:msv_errorView="@layout/state_error"
+        app:msv_loadingView="@layout/state_loading"
+        app:msv_viewState="content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/p_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"/>
+
+            <LinearLayout
+                android:id="@+id/ll_c_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/ll_c_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/space_24"
+                    android:paddingRight="@dimen/space_24">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="@dimen/space_16"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/space_4"
+                            android:background="@color/login_line"
+                            android:visibility="invisible"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/ic_ex_review_up"/>
+
+                        <View
+                            android:layout_width="0.6dp"
+                            android:layout_height="@dimen/space_16"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/space_4"
+                            android:background="@color/login_line"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_c_tit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="24dp"
+                        android:textColor="@color/colorText_88"
+                        android:textSize="@dimen/textSize_16"/>
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/c_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.asking91.app.ui.widget.MultiStateView>
+</LinearLayout>

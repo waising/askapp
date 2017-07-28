@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_action_return"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/super_buy_top_left_bg">
+                <CheckBox
+                    android:id="@+id/top_cbox1"
+                    android:button="@null"
+                    android:background="@drawable/super_buy_top_left_cbx_bg"
+                    android:textColor="@color/colorAccent"
+                    android:checked="true"
+                    android:paddingRight="16dp"
+                    android:paddingLeft="16dp"
+                    android:text="@string/super_free_title1"
+                    android:textSize="@dimen/textSize_16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/super_buy_top_right_bg">
+            <CheckBox
+                android:id="@+id/top_cbox2"
+                android:button="@null"
+                android:background="@drawable/super_buy_top_right_cbx_bg"
+                android:text="@string/super_free_title2"
+                android:textSize="@dimen/textSize_16"
+                android:checked="false"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp"
+                android:textColor="@color/text_white"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/title_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:visibility="invisible"
+        android:src="@mipmap/supertutorial_menu_more"/>
+
+</RelativeLayout>

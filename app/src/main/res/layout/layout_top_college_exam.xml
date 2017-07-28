@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f5f8fa"
+    android:orientation="horizontal">
+
+
+    <CheckBox
+        android:id="@+id/top_cbox1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="@dimen/space_10"
+        android:text="@string/mathematics_for_science"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/textSize_16" />
+
+
+    <CheckBox
+        android:id="@+id/top_cbox2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="false"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="@dimen/space_10"
+        android:text="@string/liberal_arts_mathematics"
+        android:textColor="@color/colorText_88"
+        android:textSize="@dimen/textSize_16" />
+
+</LinearLayout>
+
+

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="asking91Status" format="color"/>
+    <attr name="asking91Background" format="color" />
+    <attr name="asking91Badge" format="color" />
+    <attr name="asking91TextCommonColor" format="color" />
+    <attr name="asking91TextContentColor" format="color" />
+    <attr name="asking91Theme" format="color" />
+    <attr name="asking91FloatBtn" format="color" />
+    <attr name="asking91ToolbarText" format="color" />
+
+    <attr name="navIcon" format="reference" />
+    <attr name="navBackIcon" format="reference" />
+    <attr name="overFlowIcon" format="reference" />
+    <attr name="menuSearch" format="reference" />
+    <attr name="menuNotice" format="reference" />
+    <attr name="menuShare" format="reference" />
+    <attr name="menuSend" format="reference" />
+
+    <attr name="menuBasepacket" format="reference" />
+    <attr name="menuOtoAskInfo" format="reference" />
+    <attr name="menuOnlinetestNode" format="reference" />
+    <attr name="menuOnlinetestAskcard" format="reference" />
+    <attr name="menuRefer" format="reference" />
+
+    <item name="menu_tag_key" type="id"/>
+    <item name="pic_take_path" type="id"/>
+
+    <!-- 自定义的ratingBar -->
+    <declare-styleable name="CustomRatingBar">
+
+        <!-- 选中的图片资源 -->
+        <attr name="starSrc" format="reference" />
+        <!-- 未选中的图片资源 -->
+        <attr name="starDst" format="reference" />
+        <!-- boolean值 -->
+        <attr name="clickable" format="boolean" />
+        <attr name="step" format="float" />
+        <attr name="space" format="float" />
+        <attr name="starNumber" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiStateView">
+        <attr name="msv_loadingView" format="reference" />
+        <attr name="msv_emptyView" format="reference" />
+        <attr name="msv_errorView" format="reference" />
+        <attr name="msv_viewState" format="enum">
+            <enum name="content" value="0" />
+            <enum name="error" value="1" />
+            <enum name="empty" value="2" />
+            <enum name="loading" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <!--一对一问答 滑杆*****************-->
+    <declare-styleable name="GBSlideBar">
+        <attr name="gbs_paddingLeft" format="dimension|reference" />
+        <attr name="gbs_paddingTop" format="dimension|reference" />
+        <attr name="gbs_paddingRight" format="dimension|reference" />
+        <attr name="gbs_paddingBottom" format="dimension|reference" />
+        <attr name="gbs_background" format="color|reference" />
+        <attr name="gbs_anchor_height" format="dimension|reference" />
+        <attr name="gbs_anchor_width" format="dimension|reference" />
+        <attr name="gbs_placeholder_height" format="dimension|reference" />
+        <attr name="gbs_placeholder_width" format="dimension|reference" />
+        <attr name="gbs_type" format="integer|reference" />
+        <attr name="gbs_textSize" format="dimension|reference"/>
+        <attr name="gbs_textColor" format="color|reference"/>
+        <attr name="gbs_text_margin" format="dimension|reference" />
+
+    </declare-styleable>
+
+
+<!--滑杆-->
+    <declare-styleable name="DiscreteSeekBar">
+        <attr name="dsb_min" format="integer|dimension"/>
+        <attr name="dsb_max" format="integer|dimension"/>
+        <attr name="dsb_value" format="integer|dimension"/>
+        <attr name="dsb_mirrorForRtl" format="boolean"/>
+        <attr name="dsb_allowTrackClickToDrag" format="boolean"/>
+        <attr name="dsb_progressColor" format="color|reference"/>
+        <attr name="dsb_trackColor" format="color|reference"/>
+        <attr name="dsb_indicatorTextAppearance" format="reference"/>
+        <attr name="dsb_indicatorColor" format="color|reference"/>
+        <attr name="dsb_indicatorElevation" format="dimension"/>
+        <attr name="dsb_indicatorFormatter" format="string|reference"/>
+        <attr name="dsb_rippleColor" format="color|reference"/>
+        <attr name="dsb_indicatorPopupEnabled" format="boolean"/>
+        <attr name="dsb_trackHeight" format="integer|dimension"/>
+        <attr name="dsb_scrubberHeight" format="integer|dimension"/>
+        <attr name="dsb_thumbSize" format="integer|dimension"/>
+        <attr name="dsb_indicatorSeparation" format="integer|dimension"/>
+    </declare-styleable>
+
+    <!--自定星级控件-->
+    <declare-styleable name="StarView">
+        <attr name="mImageWidth" format="dimension"/>
+        <attr name="mImageHeight" format="dimension" />
+        <attr name="mDefaultImageId" format="reference" />
+        <attr name="mClickImageId" format="reference" />
+        <attr name="mMargin" format="dimension" />
+        <attr name="mStarNum" format="integer" />
+        <attr name="mStarChoose" format="integer" />
+        <attr name="mClickable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CommCameraView">
+        <attr name="orientation" format="integer" />
+        <attr name="imgScale" format="integer" />
+        <attr name="needPreviewData" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="viewAbove" format="reference"/>
+        <attr name="viewBehind" format="reference"/>
+        <attr name="behindOffset" format="dimension"/>
+        <attr name="behindWidth" format="dimension"/>
+        <attr name="behindScrollScale" format="float"/>
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0"/>
+            <enum name="fullscreen" value="1"/>
+            <enum name="none" value="2"/>
+        </attr>
+        <attr name="touchModeBehind">
+            <enum name="margin" value="0"/>
+            <enum name="fullscreen" value="1"/>
+            <enum name="none" value="2"/>
+        </attr>
+        <attr name="shadowDrawable" format="reference"/>
+        <attr name="shadowWidth" format="dimension"/>
+        <attr name="fadeEnabled" format="boolean"/>
+        <attr name="fadeDegree" format="float"/>
+        <attr name="selectorEnabled" format="boolean"/>
+        <attr name="selectorDrawable" format="reference"/>
+    </declare-styleable>
+
+    <!-- tagview -->
+    <declare-styleable name="AndroidTagView">
+        <attr name="vertical_interval" format="dimension" />
+        <attr name="horizontal_interval" format="dimension" />
+
+        <attr name="container_border_width" format="dimension" />
+        <attr name="container_border_radius" format="dimension" />
+        <attr name="container_border_color" format="color" />
+        <attr name="container_background_color" format="color" />
+        <attr name="container_enable_drag" format="boolean" />
+        <attr name="container_drag_sensitivity" format="float" />
+        <attr name="container_max_lines" format="integer" />
+        <attr name="container_gravity" format="enum">
+            <enum name="left" value="3" />
+            <enum name="center" value="17" />
+            <enum name="right" value="5" />
+        </attr>
+
+        <attr name="tag_border_width" format="dimension" />
+        <attr name="tag_corner_radius" format="dimension" />
+        <attr name="tag_horizontal_padding" format="dimension" />
+        <attr name="tag_vertical_padding" format="dimension" />
+        <attr name="tag_text_size" format="dimension" />
+        <attr name="tag_bd_distance" format="dimension" />
+        <attr name="tag_text_color" format="color" />
+        <attr name="tag_border_color" format="color" />
+        <attr name="tag_background_color" format="color" />
+        <attr name="tag_max_length" format="integer" />
+        <attr name="tag_clickable" format="boolean" />
+        <attr name="tag_theme" format="enum">
+            <enum name="none" value="-1" />
+            <enum name="random" value="0" />
+            <enum name="pure_cyan" value="1" />
+            <enum name="pure_teal" value="2" />
+        </attr>
+        <attr name="tag_text_direction" format="enum" >
+            <enum name="ltr" value="3" />
+            <enum name="rtl" value="4" />
+        </attr>
+
+        <attr name="tag_ripple_color" format="color" />
+        <attr name="tag_ripple_alpha" format="integer" />
+        <attr name="tag_ripple_duration" format="integer" />
+
+        <attr name="tag_enable_cross" format="boolean" />
+        <attr name="tag_cross_width" format="dimension" />
+        <attr name="tag_cross_color" format="color" />
+        <attr name="tag_cross_line_width" format="dimension" />
+        <attr name="tag_cross_area_padding" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ViewPagerIndicator">
+        <!-- Style of the circle indicator. -->
+        <attr name="vpiCirclePageIndicatorStyle" format="reference"/>
+    </declare-styleable>
+
+    <attr name="centered" format="boolean" />
+    <attr name="selectedColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="unselectedColor" format="color" />
+
+    <declare-styleable name="CirclePageIndicator">
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered" />
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr name="fillColor" format="color" />
+        <!-- Color of the filled circles that represents pages. -->
+        <attr name="pageColor" format="color" />
+        <!-- Orientation of the indicator. -->
+        <attr name="android:orientation"/>
+        <!-- Radius of the circles. This is also the spacing between circles. -->
+        <attr name="radius" format="dimension" />
+        <!-- Whether or not the selected indicator snaps to the circles. -->
+        <attr name="snap" format="boolean" />
+        <!-- Color of the open circles. -->
+        <attr name="strokeColor" format="color" />
+        <!-- Width of the stroke used to draw the circles. -->
+        <attr name="strokeWidth" />
+        <!-- View background -->
+        <attr name="android:background"/>
+    </declare-styleable>
+
+    <bool name="default_circle_indicator_centered">true</bool>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+
+    <declare-styleable name="FocusImageView">
+        <attr name="focus_focusing_id" format="integer" />
+        <attr name="focus_success_id" format="integer" />
+        <attr name="focus_fail_id" format="integer" />
+    </declare-styleable>
+</resources>

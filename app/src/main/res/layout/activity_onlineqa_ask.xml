@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <include layout="@layout/common_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBar"
+        android:layout_above="@+id/reply"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/pic_take"
+                android:layout_width="match_parent"
+                android:layout_height="207dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/onlineqa_ask_pic_bg" />
+
+            <include
+                android:id="@+id/line1"
+                layout="@layout/layout_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@+id/pic_take" />
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1">
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="15.7dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="15.7dp"
+                    android:text="标题"
+                    android:textColor="@color/colorText_88"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_toRightOf="@+id/t1"
+                    android:background="@null"
+                    android:maxLines="1"
+                    android:gravity="right"
+                    android:text="@string/onlineqa_ask_t1"
+                    android:textColor="@color/theme_blue_theme"
+                    android:textColorHint="@color/colorText_88"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/line2"
+                layout="@layout/layout_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@+id/r1" />
+
+            <EditText
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_marginBottom="@dimen/space_5"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:minLines="2"
+                android:background="@null"
+                android:layout_marginTop="@dimen/space_5"
+                android:hint="@string/onlineqa_ask_t2"
+                android:textColor="@color/colorText_c7"
+                android:textSize="13.3sp" />
+
+            <include
+                android:id="@+id/line3"
+                layout="@layout/layout_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@+id/t2" />
+
+            <RelativeLayout
+                android:id="@+id/r3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line3">
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/onlineqa_ask_t3"
+                    android:textColor="@color/colorText_88"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7.3dp"
+                    android:layout_marginRight="7.3dp"
+                    android:layout_toLeftOf="@+id/img2"
+                    android:layout_toRightOf="@+id/t3"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:hint="0"
+                    android:textColor="@color/theme_blue_theme"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="11dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/item_onlineqalist_ask" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/line4"
+                layout="@layout/layout_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_below="@+id/r3" />
+
+            <RelativeLayout
+                android:id="@+id/r4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line4">
+
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/onlineqa_ask_t4"
+                    android:textColor="@color/colorText_88"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/et2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7.3dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_toRightOf="@+id/t4"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:layout_toLeftOf="@+id/img1"
+                    android:textColor="@color/theme_blue_theme"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/arrow_right" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <include layout="@layout/layout_bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_4"
+        android:layout_marginLeft="@dimen/space_4"
+        android:layout_marginRight="@dimen/space_4"/>
+    <!--<Button
+        android:id="@+id/reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_4"
+        android:layout_marginLeft="@dimen/space_4"
+        android:layout_marginRight="@dimen/space_4"
+        android:background="@drawable/common_btn_bg"
+        android:text="@string/resetpass_ok"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/space_16" />-->
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BlueTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Customize your theme here. -->
+        <!-- 启动白背景问题-->
+        <item name="android:windowBackground">@mipmap/background</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="FullTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <!-- Customize your theme here. -->
+        <!-- 启动白背景问题-->
+        <item name="android:windowBackground">@mipmap/background</item>
+    </style>
+
+    <style name="BlueTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">?attr/asking91Status</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="asking91Background">@color/colorPrimary</item>
+        <item name="asking91ToolbarText">@color/theme_blue_toolbar_text</item>
+        <item name="asking91Badge">@color/theme_blue_badge</item>
+        <item name="asking91Status">@color/theme_blue_status</item>
+        <item name="asking91TextCommonColor">@color/theme_blue_text_common</item>
+        <item name="asking91TextContentColor">@color/theme_blue_text_content</item>
+        <item name="asking91Theme">@color/theme_blue_theme</item>
+        <item name="asking91FloatBtn">@color/theme_blue_float_btn</item>
+
+        <item name="navIcon">@mipmap/ic_actionbar_menu</item>
+        <item name="navBackIcon">@mipmap/ic_action_return</item>
+        <item name="overFlowIcon">@mipmap/ic_actionbar_menu_more</item>
+        <item name="menuSearch">@mipmap/ic_actionbar_search</item>
+        <item name="menuNotice">@mipmap/ic_actionbar_notice</item>
+        <item name="menuShare">@mipmap/ic_action_share</item>
+        <item name="menuSend">@mipmap/ic_send_white</item>
+
+        <item name="menuBasepacket">@mipmap/ic_action_share</item>
+        <item name="menuOtoAskInfo">@mipmap/otoask_more</item>
+        <item name="menuOnlinetestNode">@mipmap/node_add</item>
+        <item name="menuOnlinetestAskcard">@mipmap/ask_card</item>
+        <item name="menuRefer">@mipmap/love</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.ToolBar.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">@dimen/textSize_16</item>
+        <item name="android:textColorPrimary">@color/colorText_56</item>
+
+    </style>
+
+    <style name="Custom_Translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="noAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="Custom_Main_Theme" parent="BlueTheme">
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <style name="Custom_Theme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+    <style name="Custom_Theme_No_Translucent" parent="AppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+
+    </style>
+
+
+    <style name="Custom.Theme.ToolBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:actionOverflowButtonStyle">@style/ActionButton.Overflow</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="ActionButton.Overflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">?attr/overFlowIcon</item>
+        <item name="android:color">@android:color/white</item>
+    </style>
+
+    <style name="toolbar_textAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">@dimen/textSize_18</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CollapsingToolbarTitleStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/transparent</item>
+    </style>
+
+    <style name="CollapsingToolbarTitleStyle_collapsed" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/textSize_16</item>
+    </style>
+
+    <style name="MyDialog_style" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/dialog_bg</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!--自定义弹窗-->
+    <!--结构树-->
+    <style name="TreeNodeStyleCustom">
+        <item name="android:paddingLeft">15dp</item>
+        <!--<item name="android:showDividers">middle</item>-->
+        <!--<item name="android:divider">@android:drawable/divider_horizontal_bright</item>-->
+    </style>
+    <!--结构树-->
+
+    <style name="MyActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:background">@color/colorAccent</item>
+        <!-- Support library compatibility -->
+        <item name="background">@color/colorAccent</item>
+        <!--解决左边一直有一块边距的问题 contentInsetStart = 0 -->
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+    </style>
+
+    <style name="App.Theme.Dialog.Alert" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/black_alpha_240</item>
+    </style>
+
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <style name="NoScrollGrid_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:numColumns">2</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:layout_marginBottom">4.0dip</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="TreeNodeStyleCustom2">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <!--<item name="android:showDividers">middle</item>-->
+        <!--<item name="android:divider">@android:drawable/divider_horizontal_bright</item>-->
+    </style>
+
+    <style name="view_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.6dp</item>
+        <item name="android:background">@color/line</item>
+    </style>
+    <style name="mypopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/pop_ani_up</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pop_ani_down</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/space_8">
+
+
+    <TextView
+        android:id="@+id/tv_course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/space_24"
+        android:paddingLeft="@dimen/space_50"
+        android:paddingTop="@dimen/space_24"
+        android:text="七年级"
+        android:textColor="@drawable/textcolor_junior_to_high"
+        android:textSize="@dimen/textSize_15" />
+
+    <View style="@style/view_line" />
+</LinearLayout>

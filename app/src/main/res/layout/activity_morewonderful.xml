@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/space_12">
+        <ImageView
+            android:id="@+id/s_knowledge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/s_knowledge"/>
+
+        <ImageView
+            android:id="@+id/online_test"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/online_test"/>
+
+        <ImageView
+            android:id="@+id/online_qa"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/online_qa"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wonderfuling"
+        android:textColor="@color/colorText_c7"
+        android:textSize="@dimen/textSize_16"
+        android:layout_marginTop="@dimen/space_20"/>
+</LinearLayout>

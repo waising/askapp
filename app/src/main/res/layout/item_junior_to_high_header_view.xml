@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <!--<net.lucode.hackware.magicindicator.MagicIndicator-->
+        <!--android:id="@+id/magic_indicator6"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/view_pager"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_marginBottom="@dimen/home_viewpager_indicator" />-->
+
+    <View
+        android:layout_below="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_9"
+        android:background="@color/colorTest_f8" />
+</RelativeLayout>
+
+
+
+
+
+

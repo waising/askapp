@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:drawableLeft="@mipmap/ic_stu_record1"
+        android:drawablePadding="@dimen/space_5"
+        android:textColor="@color/colorText_88"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.3"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:background="@color/login_line"/>
+</LinearLayout>

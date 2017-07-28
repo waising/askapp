@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/pay_ask_class_btn"
+            android:textSize="@dimen/textSize_16"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/space_80"
+            android:background="@drawable/btn_pay_ask_class"
+            android:text="@string/pay_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/pay_ask_money_btn"
+            android:textSize="@dimen/textSize_16"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/space_20"
+            android:background="@drawable/btn_pay_ask_money"
+            android:text="@string/pay_ask_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/pay_ask_server_btn"
+            android:textSize="@dimen/textSize_16"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/space_20"
+            android:background="@drawable/btn_pay_ask_server"
+            android:text="@string/pay_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+
+        <Button
+            android:id="@+id/synchronous_course_purchase_btn"
+            android:textSize="@dimen/textSize_16"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/space_20"
+            android:background="@drawable/btn_pay_ask_server"
+            android:text="@string/synchronous_course_purchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+</LinearLayout>

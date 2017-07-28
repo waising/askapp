@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/text_white"
+                android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/space_45"
+        android:layout_marginTop="@dimen/space_150">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.asking91.app.ui.widget.doodle.DoodleView
+                android:id="@+id/doodle_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_150"
+        app:actualImageScaleType="fitCenter"
+        android:scaleType="fitCenter"
+        android:background="@mipmap/no_pic"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorAccent">
+
+        <TextView
+            android:id="@+id/again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:drawableLeft="@mipmap/oto_camear_ico"
+            android:drawablePadding="9dp"
+            android:text="再来一题"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/textSize_14"/>
+
+        <Chronometer
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:format="%s"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_18"/>
+
+        <TextView
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:drawableLeft="@mipmap/oto_end_ico"
+            android:drawablePadding="9dp"
+            android:text="结束辅导"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/textSize_14"/>
+    </RelativeLayout>
+
+</RelativeLayout>

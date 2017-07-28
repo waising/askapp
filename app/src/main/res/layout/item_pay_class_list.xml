@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RadioButton
+        android:id="@+id/class_btn"
+        android:button="@null"
+        android:textAlignment="center"
+        android:background="@drawable/btn_pay_sub"
+        android:textColor="@drawable/textcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/main_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <net.lucode.hackware.magicindicator.MagicIndicator
+            android:id="@+id/magic_indicator6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/view_pager"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/home_viewpager_indicator"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/main_center"
+        android:layout_marginTop="@dimen/space_30"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/basepacket_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:drawableTop="@mipmap/main_logo1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/main_t6"
+                    android:textColor="@color/colorText_56"
+                    android:textSize="@dimen/textSize_16"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_take_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:drawableTop="@mipmap/main_logo2"
+                    android:gravity="center_horizontal"
+                    android:text="@string/main_t2"
+                    android:textColor="@color/colorText_56"
+                    android:textSize="@dimen/textSize_16"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/more_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:drawableTop="@mipmap/main_logo3"
+                    android:gravity="center_horizontal"
+                    android:text="@string/main_t7"
+                    android:textColor="@color/colorText_56"
+                    android:textSize="@dimen/textSize_16"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_studyhis"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_30"
+            android:layout_marginRight="@dimen/space_30"
+            android:background="@drawable/bg_corners_white_cir"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_20"
+            android:paddingRight="@dimen/space_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_studyhis_here"
+                android:drawablePadding="@dimen/space_5"
+                android:text="上次学到："
+                android:textColor="@color/colorText_c7"
+                android:textSize="@dimen/textSize_14"/>
+
+            <TextView
+                android:id="@+id/tv_studyhis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/colorText_88"
+                android:textSize="@dimen/textSize_14"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_top"
+        android:layout_marginTop="@dimen/space_20"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/main_t4_img"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/main_img1"
+                android:layout_alignLeft="@+id/main_img1"
+                android:layout_alignRight="@+id/main_img1"
+                android:background="@mipmap/main_t4_bg"
+                android:gravity="center"
+                android:text="@string/main_t4"
+                android:textColor="@color/text_white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/main_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/main_t5_img"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/main_img2"
+                android:layout_alignLeft="@+id/main_img2"
+                android:layout_alignRight="@+id/main_img2"
+                android:background="@mipmap/main_t4_bg"
+                android:gravity="center"
+                android:text="@string/main_t5"
+                android:textColor="@color/text_white"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

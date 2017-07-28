@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.asking91.app.ui.onlinetest.OnlineTestActivity">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <LinearLayout
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/online_test_czsx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/backpacket_czsx"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_marginLeft="@dimen/space_10"
+            android:id="@+id/online_test_czwl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/backpacket_czwl"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="@dimen/space_10"
+        android:paddingRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/online_test_gzsx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/backpacket_gzsx"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_marginLeft="@dimen/space_10"
+            android:id="@+id/online_test_gzwl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/backpacket_gzwl"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

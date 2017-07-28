@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/color_ff"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="?attr/asking91Status"
+                app:collapsedTitleTextAppearance="@style/toolbar_textAppearance"
+                app:expandedTitleTextAppearance="@style/CollapsingToolbarTitleStyle"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="阿思币余额"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_marginRight="@dimen/space_20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/space_15"
+                        android:textColor="@color/white"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/space_20"
+                        android:layout_marginRight="@dimen/space_20"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:textAlignment="viewStart"
+                            android:minWidth="@dimen/space_40"
+                            android:gravity="center"
+                            android:id="@+id/tv_balance"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_25"
+                            android:layout_alignBottom="@+id/tv_recharge" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@mipmap/mine_ask_money"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/tv_balance"
+                            android:layout_toEndOf="@+id/tv_balance"
+                            android:layout_marginLeft="17dp"
+                            android:layout_marginStart="17dp"
+                            android:layout_alignBottom="@+id/tv_balance" />
+
+                        <TextView
+                            android:text="充值"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:background="@mipmap/textview_bg"
+                            android:id="@+id/tv_recharge" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/mtoolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_50"
+                    android:minHeight="@dimen/space_50"
+                    android:theme="@style/Custom.Theme.ToolBar"
+                    app:contentInsetStartWithNavigation="0dp"
+                    app:layout_collapseMode="pin"
+                    app:maxButtonHeight="@dimen/space_50"
+                    app:navigationIcon="?attr/navBackIcon"
+                    app:titleTextAppearance="@style/toolbar_textAppearance" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <!--<android.support.v4.widget.NestedScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+            <!--&lt;!&ndash; Your scrolling content &ndash;&gt;-->
+        <com.asking91.app.ui.widget.AskSwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:background="@color/main_bg">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+        </com.asking91.app.ui.widget.AskSwipeRefreshLayout>
+        <!--</android.support.v4.widget.NestedScrollView>-->
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

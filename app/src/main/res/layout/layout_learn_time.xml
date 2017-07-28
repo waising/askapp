@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/space_6"
+    android:paddingLeft="@dimen/space_14"
+    android:paddingRight="@dimen/space_14"
+    android:paddingTop="@dimen/space_6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学习时限:"
+        android:textColor="@color/colorText_88"
+        android:textSize="@dimen/textSize_15" />
+
+
+    <TextView
+        android:id="@+id/top_cbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_34"
+        android:paddingRight="@dimen/space_25"
+        android:paddingTop="@dimen/space_10"
+        android:text="@string/twelve_month"
+        android:textColor="@color/selector_blue2gray"
+        android:textSize="@dimen/textSize_15" />
+
+    <TextView
+        android:id="@+id/top_cbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="@dimen/space_30"
+        android:paddingRight="@dimen/space_10"
+        android:paddingTop="@dimen/space_10"
+        android:text="@string/six_month"
+        android:textColor="@color/selector_blue2gray"
+        android:textSize="@dimen/textSize_15" />
+
+
+</LinearLayout>
+
+

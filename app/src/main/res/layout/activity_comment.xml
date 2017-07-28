@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/comment_edt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_120"
+            android:height="@dimen/space_100"
+            android:gravity="left|center_vertical"
+            android:hint="@string/knowledge_detail_plz_comment"
+            android:paddingLeft="@dimen/space_2"
+            android:paddingRight="@dimen/space_2"
+            android:textColorHint="@color/colorText_c7"
+            android:textSize="@dimen/textSize_13"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/space_1"
+        android:layout_marginTop="@dimen/space_6"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/space_10">
+
+        <TextView
+            android:id="@+id/type_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorText_33"
+            android:textSize="@dimen/textSize_16"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_6"
+        android:background="@color/white">
+
+        <com.asking91.app.ui.widget.AskMathView
+            android:id="@+id/mathView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

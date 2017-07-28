@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar" />
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/magic_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_navigator_height"
+        android:layout_below="@+id/toolBar"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_marginBottom="@dimen/space_9"
+        android:layout_marginLeft="@dimen/space_11"
+        android:layout_marginRight="@dimen/space_11"
+        android:layout_marginTop="@dimen/space_9"
+        android:background="@drawable/edittext_bg"
+        android:paddingLeft="@dimen/space_12"
+        android:paddingRight="@dimen/space_10">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="找重点、查难点、搜考点"
+            android:inputType="textPersonName"
+            android:maxLength="16"
+            android:textColor="@color/colorText_c7"
+            android:textColorHint="@color/colorText_c7"
+            android:textSize="@dimen/textSize_16" />
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="@dimen/space_30"
+            android:paddingRight="@dimen/space_10"
+            app:srcCompat="@mipmap/ic_search_knowledge" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/pic_take"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_8"
+        android:src="@mipmap/onlineqa_ask_pic_bg" />
+    <TextView
+        android:id="@+id/notice_tv"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/space_30"
+        android:textSize="@dimen/textSize_16"
+        android:textColor="@color/colorText_c7"
+        android:textAlignment="center"
+        android:text="点击图片可再次拍照"
+        android:layout_height="wrap_content" />
+</LinearLayout>

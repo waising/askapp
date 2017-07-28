@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#36C17B"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_toolbar"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_share_award"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="20"
+                android:textColor="#f38d29"
+                android:textSize="36dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="阿思币"
+                android:textColor="#f38d29"
+                android:textSize="@dimen/textSize_14"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_60"
+            android:layout_marginRight="@dimen/space_60"
+            android:background="@mipmap/bg_tv_share_award"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+                android:text="邀请码:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_14"/>
+
+            <TextView
+                android:id="@+id/et_invicode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:paddingLeft="@dimen/space_10"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_14"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_15"
+            android:layout_marginLeft="@dimen/space_80"
+            android:layout_marginRight="@dimen/space_80"
+            android:layout_marginTop="@dimen/space_10"
+            android:gravity="center"
+            android:text="同学们也觉得书里好难？那就推荐阿思可在线！"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_14"/>
+
+        <TextView
+            android:id="@+id/btn_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_20"
+            android:background="@mipmap/btn_share_award"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@mipmap/bg_share_award_tv_tip"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/space_20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_25"
+                    android:text="1.发送邀请码给好友"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_14"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:text="1.引导好友输入邀请码并注册"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_14"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:text="1.推荐成功就送20阿思币"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_14"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="活动规则"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_16"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

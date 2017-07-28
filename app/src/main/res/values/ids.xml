@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--超级辅导课==变式题optionAdapter的点击设置key-->
+    <item name="supertutorial_option_key1" type="id"/>
+    <item name="supertutorial_option_key2" type="id"/>
+    <!--通用key传值-->
+    <item name="key_id" type="id"/>
+    <item name="key_position" type="id"/>
+    <item name="key_select_id" type="id"/>
+    <item name="key_answer" type="id"/>
+    <item name="key_holder" type="id"/>
+    <item name="key_anserId" type="id"/>
+
+    <item name="selected_view" type="id"/>
+</resources>

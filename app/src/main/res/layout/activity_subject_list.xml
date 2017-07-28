@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/space_6">
+
+    <include layout="@layout/common_toolbar" />
+
+    <!--搜索栏-->
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_48"
+        android:layout_below="@+id/toolBar"
+        android:background="@color/login_gomain"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/space_9"
+            android:layout_marginLeft="@dimen/space_9"
+            android:layout_marginRight="@dimen/space_11"
+            android:layout_marginTop="@dimen/space_9"
+            android:layout_weight="2"
+            android:background="@drawable/edittext_subject_bg">
+            <!--搜索栏图标-->
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/space_11"
+                android:paddingRight="@dimen/space_10"
+                app:srcCompat="@mipmap/ic_search_subject" />
+            <!--输入框-->
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/img_search"
+                android:background="@null"
+                android:inputType="textPersonName"
+                android:maxLength="16"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_16" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_exit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <!--
+        <com.asking91.app.ui.widget.MultiStateView
+            android:id="@+id/multiStateView"
+            android:layout_below="@+id/layout_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/no_color"
+            app:msv_emptyView="@layout/state_empty"
+            app:msv_errorView="@layout/state_error"
+            app:msv_loadingView="@layout/state_loading"
+            app:msv_viewState="loading">
+    -->
+
+    <com.asking91.app.ui.widget.AskSwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_search"
+        android:background="@color/colorTest_f8">
+
+            <!--RecyclerView-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+    </com.asking91.app.ui.widget.AskSwipeRefreshLayout>
+    <!--    </com.asking91.app.ui.widget.MultiStateView>-->
+
+    <!--搜不到题目的提示-->
+    <LinearLayout
+        android:id="@+id/layout_none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/swipe_layout"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_22"
+            android:visibility="visible"
+            app:srcCompat="@mipmap/ic_search_no_find" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_15"
+            android:layout_marginTop="@dimen/space_32"
+            android:gravity="center_horizontal"
+            android:text="没有找到相关题目"
+            android:textColor="@color/colorText_88"
+            android:textSize="@dimen/textSize_18" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="请调整关键词再搜索"
+            android:textColor="@color/colorText_c7"
+            android:textSize="@dimen/textSize_16" />
+
+        <TextView
+            android:id="@+id/tv_once"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_none"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_48"
+            android:background="@drawable/item_border_line"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="@dimen/space_32"
+            android:paddingRight="@dimen/space_32"
+            android:paddingTop="@dimen/space_10"
+            android:text="再搜一题"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+
+</RelativeLayout>

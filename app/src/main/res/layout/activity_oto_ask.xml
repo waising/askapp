@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:context="com.asking91.app.ui.oto.OtoAskActivity">
+
+    <include layout="@layout/common_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reply"
+        android:layout_below="@+id/toolBar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="50dp">
+
+            <ImageView
+                android:id="@+id/pic_take"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolBar"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@mipmap/onlineqa_ask_pic_bg"/>
+
+            <include layout="@layout/layout_line"/>
+
+            <LinearLayout
+                android:id="@+id/ll_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_14"
+                android:layout_marginLeft="@dimen/space_8"
+                android:layout_marginRight="@dimen/space_8"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:id="@+id/ll_grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_8"
+                android:layout_marginRight="@dimen/space_8"
+                android:layout_marginTop="@dimen/space_14"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_16"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="阿思可悬赏"
+                    android:textColor="@color/colorText_88"
+                    android:textSize="@dimen/textSize_14"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="（悬赏阿思币加快解题速度哦！）"
+                    android:textColor="@color/login_gomain"
+                    android:textSize="@dimen/textSize_14"/>
+            </LinearLayout>
+
+            <com.asking91.app.ui.oto.CustomSeekbar
+                android:id="@+id/mSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/layout_bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_4"
+        android:layout_marginLeft="@dimen/space_4"
+        android:layout_marginRight="@dimen/space_4"/>
+
+</RelativeLayout>

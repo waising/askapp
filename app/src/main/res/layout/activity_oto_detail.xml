@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context="com.asking91.app.ui.oto.OtoAskActivity">
+
+    <include layout="@layout/toolbar_customer" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reply"
+        android:layout_below="@+id/toolBar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.asking91.app.ui.widget.AskSimpleDraweeView
+                android:id="@+id/pic_take"
+                android:layout_width="match_parent"
+                android:layout_height="207dp"
+                android:layout_below="@+id/toolBar"
+                android:clickable="false"
+                android:layout_marginBottom="8dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/no_pic" />
+
+            <include
+                layout="@layout/layout_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pic_take"
+                android:layout_marginTop="10dp"
+                android:text="@string/oto_ask_t1"
+                android:textColor="@color/colorText_88"
+                android:textSize="@dimen/textSize_14" />
+
+            <RadioButton
+                android:id="@+id/tBtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16.3dp"
+                android:layout_weight="1"
+                android:background="@drawable/chbox_olineqa_dialog"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="false"
+                android:gravity="center"
+                android:minWidth="150dp"
+                android:padding="8dp"
+                android:text=""
+                android:textColor="@drawable/textcolor_onlineqa_dialog"
+                android:textSize="13.1sp" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/oto_ask_t2"
+                android:textColor="@color/colorText_88"
+                android:textSize="@dimen/textSize_14" />
+
+            <RadioButton
+                android:id="@+id/tBtn11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="16.7dp"
+                android:layout_weight="1"
+                android:background="@drawable/chbox_olineqa_dialog"
+                android:button="@null"
+                android:checked="true"
+                android:clickable="false"
+                android:gravity="center"
+                android:minWidth="150dp"
+                android:padding="6dp"
+                android:text=""
+                android:textColor="@drawable/textcolor_onlineqa_dialog"
+                android:textSize="13.1sp" />
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/oto_t3"
+                android:textColor="@color/colorText_88"
+                android:textSize="@dimen/textSize_14" />
+
+            <RadioButton
+                android:id="@+id/rbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:button="@null"
+                android:padding="15dp"
+                android:clickable="false"
+                android:checked="true"
+                android:layout_margin="7dp"
+                android:background="@drawable/oto_end_cbx_bg"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_18"
+                android:textColor="@drawable/textcolor_oto_end_cbx"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

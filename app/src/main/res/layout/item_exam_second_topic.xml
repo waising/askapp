@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.asking91.app.ui.widget.MultiStateView
+                android:id="@+id/load_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:msv_emptyView="@layout/state_empty"
+                app:msv_errorView="@layout/state_error"
+                app:msv_loadingView="@layout/state_loading"
+                app:msv_viewState="content">
+
+                <include
+                    android:id="@+id/tit_webview"
+                    layout="@layout/common_math"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp" />
+            </com.asking91.app.ui.widget.MultiStateView>
+
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/el_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                app:el_duration="300"
+                app:el_expanded="true"
+                app:el_translate_children="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.asking91.app.ui.widget.MultiStateView
+                        android:id="@+id/answer_load_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ecf3f6"
+                        app:msv_emptyView="@layout/state_empty"
+                        app:msv_errorView="@layout/state_error"
+                        app:msv_loadingView="@layout/state_loading"
+                        app:msv_viewState="content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space_16"
+                                android:layout_marginTop="@dimen/space_16"
+                                android:drawableLeft="@mipmap/ic_check"
+                                android:drawablePadding="@dimen/space_6"
+                                android:text="解析"
+                                android:textColor="@color/colorText_56"
+                                android:textSize="@dimen/textSize_16" />
+
+                            <com.asking91.app.ui.widget.AskMathView
+                                android:id="@+id/web_answer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/space_16"
+                                android:layout_marginLeft="@dimen/space_16"
+                                android:layout_marginRight="@dimen/space_16"
+                                android:layout_marginTop="@dimen/space_20" />
+
+
+                        </LinearLayout>
+
+                    </com.asking91.app.ui.widget.MultiStateView>
+                </LinearLayout>
+            </net.cachapa.expandablelayout.ExpandableLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_12"
+        android:paddingTop="@dimen/space_12">
+
+        <com.asking91.app.ui.widget.DrawableCenterButton
+            android:id="@+id/cb_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_16"
+            android:layout_marginRight="@dimen/space_16"
+            android:background="@drawable/variant_question_bg"
+            android:button="@null"
+            android:drawableLeft="@drawable/variant_question_detail_icon_bg"
+            android:drawablePadding="@dimen/space_10"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="@dimen/space_14"
+            android:paddingTop="@dimen/space_14"
+            android:text="查看解析"
+            android:textColor="@drawable/variant_question_text_bg"
+            android:textSize="@dimen/textSize_14" />
+    </LinearLayout>
+
+</LinearLayout>

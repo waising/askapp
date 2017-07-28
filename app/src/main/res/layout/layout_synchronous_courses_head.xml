@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/space_12"
+    android:paddingLeft="@dimen/space_16"
+    android:paddingRight="@dimen/space_16"
+    android:paddingTop="@dimen/space_12">
+
+
+    <CheckBox
+        android:id="@+id/top_cbox1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingTop="@dimen/space_10"
+        android:text="@string/ask_czsx"
+        android:textColor="@color/dark_blue"
+        android:textSize="@dimen/textSize_16" />
+
+    <CheckBox
+        android:id="@+id/top_cbox2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="false"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingTop="@dimen/space_10"
+        android:text="@string/ask_czwl"
+        android:textColor="@color/color_da"
+        android:textSize="@dimen/textSize_16" />
+
+    <CheckBox
+        android:id="@+id/top_cbox3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="false"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingTop="@dimen/space_10"
+        android:text="@string/ask_gzsx"
+        android:textColor="@color/color_da"
+        android:textSize="@dimen/textSize_16" />
+
+    <CheckBox
+        android:id="@+id/top_cbox4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:checked="false"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingTop="@dimen/space_10"
+        android:text="@string/ask_gzwl"
+        android:textColor="@color/color_da"
+        android:textSize="@dimen/textSize_16" />
+</LinearLayout>
+
+

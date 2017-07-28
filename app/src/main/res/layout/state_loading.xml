@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pnikosis.materialishprogress.ProgressWheel
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_gravity="center"
+    app:matProg_barWidth="2.0dp"
+    app:matProg_barColor="@color/theme_blue_theme"
+    app:matProg_progressIndeterminate="true"
+    app:matProg_fillRadius="true" />

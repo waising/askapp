@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/common_toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_12"
+            android:layout_marginRight="@dimen/space_12"
+            android:orientation="vertical">
+
+
+            <include layout="@layout/layout_line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:src="@mipmap/login_phone" />
+
+                <EditText
+                    android:id="@+id/old_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_16"
+                    android:layout_marginRight="30.7dp"
+                    android:background="@null"
+                    android:hint="@string/input_tel"
+                    android:inputType="textPassword"
+                    android:textColor="@color/login_text"
+                    android:textColorHint="@color/login_line"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:src="@mipmap/login_phone" />
+
+                <EditText
+                    android:id="@+id/new_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_16"
+                    android:layout_marginRight="30.7dp"
+                    android:background="@null"
+                    android:hint="@string/input_new_tel"
+                    android:inputType="textPassword"
+                    android:textColor="@color/login_text"
+                    android:textColorHint="@color/login_line"
+                    android:textSize="@dimen/textSize_14" />
+            </LinearLayout>
+            <include layout="@layout/layout_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <ImageView
+                    android:id="@+id/i1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:src="@mipmap/yzm"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"/>
+
+                <EditText
+                    android:id="@+id/v_code_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/i1"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="@string/input_code"
+                    android:inputType="textPassword"
+                    android:textColor="@color/login_text"
+                    android:textColorHint="@color/login_line"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/login_line"
+                    android:background="@null"
+                    android:layout_marginRight="@dimen/space_15"
+                    android:layout_toLeftOf="@+id/get_code"
+                    android:layout_centerVertical="true"
+                    android:text="|"
+                    android:textSize="@dimen/textSize_14" />
+
+                <TextView
+                    android:id="@+id/get_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/theme_blue_theme"
+                    android:background="@null"
+                    android:layout_marginRight="@dimen/space_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="获取验证码"
+                    android:textSize="@dimen/textSize_14" />
+            </RelativeLayout>
+            <include layout="@layout/layout_line" />
+
+
+            <Button
+                android:id="@+id/reset_tel_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_12"
+                android:layout_marginRight="@dimen/space_12"
+                android:layout_marginTop="46dp"
+                android:background="@drawable/btn_register_bg"
+                android:text="@string/reset_pwd_ok"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/textSize_16" />
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>

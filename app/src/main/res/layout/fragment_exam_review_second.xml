@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_section"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:drawableRight="@mipmap/set_item_more"
+        android:drawablePadding="@dimen/space_12"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_13"
+        android:paddingRight="@dimen/space_12"
+        android:singleLine="true"
+        android:textColor="@color/colorText_88"
+        android:textSize="@dimen/textSize_16" />
+
+    <com.asking91.app.ui.widget.AskMathView
+        android:id="@+id/mv_name"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="@dimen/space_13"
+        android:layout_marginRight="@dimen/space_12"
+        android:layout_marginTop="@dimen/space_12"
+        android:layout_marginBottom="@dimen/space_12"
+        android:visibility="gone" />
+
+    <include layout="@layout/layout_line" />
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <include
+        android:id="@+id/line"
+        layout="@layout/layout_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_above="@+id/askRadioGroup" />
+
+    <com.asking91.app.ui.widget.AskRadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_ex_review_sec1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:textSize="0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_ex_review_sec2"
+                android:button="@null"
+                android:gravity="center"
+                android:textSize="0sp" />
+        </LinearLayout>
+
+    </com.asking91.app.ui.widget.AskRadioGroup>
+
+</LinearLayout>

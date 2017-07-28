@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/space_16"
+        android:paddingLeft="28.5dp"
+        android:paddingRight="29dp"
+        android:paddingTop="@dimen/space_16">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_ex_review_nom" />
+
+        <!-- 有公式数据时 -->
+        <com.asking91.app.ui.widget.AskMathView
+            android:id="@+id/mv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="27dp"
+            android:visibility="gone" />
+        <!-- 无公式数据时 -->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="27dp"
+            android:text="fdfdfdfdfddffddf"
+            android:textColor="@color/colorText_88"
+            android:textSize="@dimen/textSize_16" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_line" />
+</LinearLayout>
